@@ -4,7 +4,10 @@
   "description": "mern learning",
   "main": "app/js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [
     "mern",
@@ -16,7 +19,9 @@
   "author": "aylok1n",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^16.0.0",
-    "express": "^4.17.2"
+    "concurrently": "^7.0.0",
+    "express": "^4.17.2",
+    "node-env-file": "^0.1.8",
+    "nodemon": "^2.0.15"
   }
 }
