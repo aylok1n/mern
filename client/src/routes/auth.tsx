@@ -1,16 +1,10 @@
 import { useOldState } from "../hooks/useOldState";
 import { useFetch } from "../hooks/useFetch";
 import { Button, TextField } from "@mui/material";
-import React from "react";
-
-interface formProps {
-    email: string,
-    name: string,
-    password: string
-}
+import React, { useEffect } from "react";
 
 export const AuthPage = () => {
-    const [form, setForm] = React.useState<formProps>({
+    const [form, setForm] = useOldState({
         email: '',
         name: '',
         password: ''
@@ -25,13 +19,18 @@ export const AuthPage = () => {
         })
     }
 
+    useEffect(() => {
+        console.error(error) // сделать алерт
+    }, [error])
+
     const requestFetch = async () => {
         const data = await request({
             url: '/api/auth/register',
             body: form,
             method: 'POST'
         })
-        console.log(data);
+        console.log(data)
+
     }
 
     return (

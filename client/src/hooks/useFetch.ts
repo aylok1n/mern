@@ -14,7 +14,7 @@ export const useFetch = () => {
     const request = useCallback(async (params: FetchParams) => {
         setLoader(true)
         try {
-            let { url, method, body, headers } = params
+            let { url, method, body, headers = {} } = params
             headers['Content-type'] = "application/json"
             const response = await fetch(url, {
                 method: method || 'GET',
@@ -31,5 +31,5 @@ export const useFetch = () => {
         }
     }, [])
 
-    return { request, loader, error }
+    return { loader, error, request }
 }

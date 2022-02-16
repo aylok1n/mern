@@ -1,9 +1,9 @@
 import { useState } from "react"
 
-export const useOldState = (initialState: Object) => {
+export const useOldState = <Type>(initialState: Type): [Type, (nextState: Type) => void] => {
     const [state, setState] = useState(initialState)
 
-    const setOldState = (nextState: Object) => {
+    const setOldState = (nextState: Type) => {
         setState({
             ...state, ...nextState
         })
