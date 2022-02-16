@@ -24,10 +24,11 @@ export const useFetch = () => {
             const data = await response.json()
             if (!response.ok) throw new Error(data?.message || 'useFetch error')
             setLoader(false)
+            setError(null)
             return data
         } catch (error: any) {
             setLoader(false)
-            setError(error?.message)
+            setError(error?.message || 'Произошла ошибка')
         }
     }, [])
 
