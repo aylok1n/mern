@@ -1,11 +1,19 @@
 import React from 'react';
-import { AuthPage } from './routes/auth';
+import { AuthContext } from './context/AuthContext';
+import { useAuth } from './hooks/useAuth';
+import { useRoutes } from './routes';
 
 const App = () => {
+  const { token, login, logout, userId, ready } = useAuth()
+  const isAuthenticated = !!token
+  const routes = useRoutes(isAuthenticated)
+
   return (
-    <div>
-      <AuthPage/>
-    </div>
+    <AuthContext.Provider value={{
+      token, login, logout, userId, isAuthenticated
+    }}>
+      {routes}
+    </AuthContext.Provider>
   );
 }
 

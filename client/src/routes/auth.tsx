@@ -2,7 +2,8 @@ import { useOldState } from "../hooks/useOldState";
 import { useFetch } from "../hooks/useFetch";
 import { Button, TextField, Box, Tabs, Tab, Typography, Alert } from "@mui/material";
 import PropTypes from 'prop-types';
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { AuthContext } from "../context/AuthContext";
 
 function TabPanel(props: any) {
     const { children, value, index, ...other } = props;
@@ -44,8 +45,8 @@ export const AuthPage = () => {
         password: ''
     })
     const [tab, setTab] = useState(0)
-
     const { request, loader, error } = useFetch()
+    const auth = useContext(AuthContext)
 
     const setInput = (e: React.ChangeEvent<HTMLInputElement>) => {
         setForm({
@@ -62,12 +63,13 @@ export const AuthPage = () => {
         })
     }
 
-    const auth = async () => {
+    const login = async () => {
         const data = await request({
             url: '/api/auth/login',
             body: form,
             method: 'POST'
         })
+        auth.login(data.token, data.userId)
     }
 
     const changeTab = (event: React.SyntheticEvent<Element, Event>, value: any) => {
@@ -98,7 +100,7 @@ export const AuthPage = () => {
                     <div className="flex flex-col w-54 gap-y-3">
                         <TextField value={form.email} id="standard-basic" name="email" label="Email" onChange={setInput} variant="standard" />
                         <TextField value={form.password} id="standard-basic" name="password" label="Password" onChange={setInput} variant="standard" />
-                        <Button disabled={loader} onClick={auth} variant="contained">Захади</Button>
+                        <Button disabled={loader} onClick={login} variant="contained">Захади</Button>
                     </div>
                 </TabPanel>
             </div>
