@@ -8,6 +8,7 @@ const { PORT, PRODUCTION, MONGOURI } = process.env
 const app = express()
 app.use(express.json({ extended: true }))
 app.use('/api/auth', require('./routes/auth.routes'))
+app.use('/api/search', require('./routes/search.routes'))
 
 if (PRODUCTION) {
     app.use('/', express.static(path.join(__dirname, 'client', 'build')))
