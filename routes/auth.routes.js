@@ -12,7 +12,7 @@ const { JWT_SECRET } = process.env
 router.post(
     '/register',
     [
-        check('email', 'Некорректный email').normalizeEmail().isEmail(),
+        check('email', 'Некорректный email').toLowerCase().isEmail(),
         check('password', 'Минимальная длина пароля 6 символов')
             .isLength({ min: 6 })
     ],
@@ -27,7 +27,7 @@ router.post(
                 })
             }
 
-            const { email, password } = req.body
+            const { email, name, password } = req.body
 
             const candidate = await User.findOne({ email })
 
@@ -36,7 +36,7 @@ router.post(
             }
 
             const hashedPassword = await bcrypt.hash(password, 12)
-            const user = new User({ email, password: hashedPassword })
+            const user = new User({ email, name, password: hashedPassword })
 
             await user.save()
 
@@ -51,7 +51,7 @@ router.post(
 router.post(
     '/login',
     [
-        check('email', 'Введите корректный email').normalizeEmail().isEmail(),
+        check('email', 'Введите корректный email').toLowerCase().isEmail(),
         check('password', 'Введите пароль').exists()
     ],
     async (req, res) => {
@@ -82,7 +82,7 @@ router.post(
             const token = jwt.sign(
                 { userId: user.id },
                 JWT_SECRET,
-                { expiresIn: '1h' }
+                { expiresIn: '365d' }
             )
 
             res.json({ token, userId: user.id })
