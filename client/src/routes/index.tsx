@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router, Routes, Route, Outlet, Navigate } from 'react-router-dom'
 import { AuthPage } from './auth'
 import PrimarySearchAppBar from "../components/appBar"
-import { ChatPage } from "./chat"
+import { ChatsPage } from "./chat"
 import { ProfilePage } from "./profile"
 
 const Layout = () => {
@@ -23,7 +23,7 @@ export const useRoutes = (isAuthenticated: boolean) => {
                 <Router>
                     <Routes>
                         <Route path="/" element={<Layout />}>
-                            <Route path="chat" element={<ChatPage />} />
+                            <Route path="chat" element={<ChatsPage />} />
                             <Route path="profile" element={<ProfilePage />} />
                         </Route>
                         <Route path='*' element={<Navigate to="/chat" />} />

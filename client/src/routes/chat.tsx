@@ -1,6 +1,6 @@
 import { useFetch } from "../hooks/useFetch";
 import { List, ListItem, ListItemButton, ListItemIcon, ListItemText, Typography, } from "@mui/material";
-import { useContext, useEffect, useState } from "react";
+import { useCallback, useContext, useEffect, useState } from "react";
 import { AuthContext } from "../context/AuthContext";
 import { AccountCircle } from "@mui/icons-material";
 import { Box } from "@mui/system";
@@ -22,7 +22,7 @@ interface Chat {
     messages: message[]
 }
 
-const ChatItem = ({ chat }: { chat: Chat }) => {
+const ChatItem = ({ chat, openChat }: { chat: Chat, openChat: (chat: Chat) => void }) => {
 
     const getDate = () => {
         const date = new Date(chat.lastMessage.date)
@@ -31,9 +31,13 @@ const ChatItem = ({ chat }: { chat: Chat }) => {
         return date.toDateString()
     }
 
+    const ClickHandler = () => {
+        openChat(chat)
+    }
+
     return (
         <ListItem>
-            <ListItemButton>
+            <ListItemButton onClick={ClickHandler}>
                 <ListItemIcon>
                     <AccountCircle />
                 </ListItemIcon>
@@ -47,8 +51,9 @@ const ChatItem = ({ chat }: { chat: Chat }) => {
 }
 
 
-export const ChatPage = () => {
+export const ChatsPage = () => {
     const [chats, setChats] = useState<Chat[]>([])
+    const [opennedChat, setOpennedChat] = useState<Chat | null>(null)
     const { request } = useFetch()
     const auth = useContext(AuthContext)
 
@@ -66,12 +71,20 @@ export const ChatPage = () => {
         setChats(data.chats)
     }
 
+    const openChat = useCallback((chat: Chat) => {
+        setOpennedChat(chat)
+    }, [opennedChat])
 
     return (
-        <div className="w-full my-5 max-w-screen-xl flex-row">
-            <List className="w-96 h-full shadow-lg bg-teal-100">
-                {chats.map(chat => <ChatItem chat={chat} />)}
+        <div className="w-full py-5 max-w-screen-xl flex flex-row">
+            <List className="max-w-96 h-screen shadow-lg bg-teal-100">
+                {chats.map(chat => <ChatItem openChat={openChat} chat={chat} />)}
             </List>
+            {!!opennedChat && (
+                <div className="w-full h-full bg-slate-400">
+                    {JSON.stringify(opennedChat)}
+                </div>
+            )}
         </div>
     )
 } 
