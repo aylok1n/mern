@@ -147,15 +147,15 @@ export default function PrimarySearchAppBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
-        <Toolbar>
+      <AppBar position="static" className='flex items-center' >
+        <Toolbar className='w-full max-w-screen-xl'>
           <Typography
             variant="h6"
             noWrap
             component="div"
             sx={{ display: { xs: 'none', sm: 'block' } }}
           >
-            Гей сайт
+            Экстра ёпта мессенгер
           </Typography>
           <Search>
             <SearchIconWrapper>
@@ -163,7 +163,7 @@ export default function PrimarySearchAppBar() {
             </SearchIconWrapper>
             <StyledInputBase
               placeholder="Search…"
-              inputProps={{ 'aria-label': 'search' }}
+              inputProps={{ 'aria-label': 'Поиск' }}
             />
           </Search>
           <Box sx={{ flexGrow: 1 }} />
