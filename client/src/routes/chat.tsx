@@ -1,11 +1,12 @@
 import { useFetch } from "../hooks/useFetch";
 import { Button, TextField, } from "@mui/material";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../context/AuthContext";
 
 
 export const ChatPage = () => {
     const [text, setText] = useState('')
+    const [chats, setChats] = useState([])
     const { request } = useFetch()
     const auth = useContext(AuthContext)
 
@@ -24,6 +25,20 @@ export const ChatPage = () => {
         console.clear()
         console.log(data)
     }
+
+    const getChats = async () => {
+        const data = await request({
+            url: '/api/chat',
+            headers: {
+                'Authorization': `Bearer ${auth.token}`
+            }
+        })
+        console.log(data)
+    }
+
+    useEffect(() => {
+        getChats()
+    }, [])
 
     return (
         <div>
