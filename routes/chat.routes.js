@@ -4,7 +4,7 @@ const Chat = require('../models/Chat')
 const User = require('../models/User')
 const router = Router()
 
-// get all messages
+// get all chats
 router.get('/', auth, async (req, res) => {
     try {
         let chats = await Chat.find(
@@ -18,16 +18,17 @@ router.get('/', auth, async (req, res) => {
 
         if (!chats) return res.json({ chats: [] })
 
-        res.json({
-            chats: chats.map(chat => {
-                return {
-                    chatId: chat._id,
-                    chatWithId: chat.members.find(member => member !== req.user.userId),
-                    lastMessage: chat.messages[chat.messages.length - 1],
-                    messages: chat.messages
-                }
-            })
-        })
+        const response = await Promise.all(chats.map(async chat => {
+            const member = await User.findById(chat.members.find(member => member !== req.user.userId)).select('name image')
+            return {
+                chatId: chat._id,
+                chatWith: member,
+                lastMessage: chat.messages[chat.messages.length - 1],
+                messages: chat.messages
+            }
+        }))
+
+        res.json({ chats: response })
 
     } catch (error) {
         console.error(error)
