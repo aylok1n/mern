@@ -56,7 +56,7 @@ export const AuthPage = () => {
     }
 
     const register = async () => {
-        const data = await request({
+        await request({
             url: '/api/auth/register',
             body: form,
             method: 'POST'
