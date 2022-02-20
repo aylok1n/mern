@@ -1,30 +1,60 @@
 import { useFetch } from "../hooks/useFetch";
-import { Button, TextField, } from "@mui/material";
+import { List, ListItem, ListItemButton, ListItemIcon, ListItemText, Typography, } from "@mui/material";
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../context/AuthContext";
+import { AccountCircle } from "@mui/icons-material";
+import { Box } from "@mui/system";
+
+type message = {
+    date: string
+    senderId: string
+    text: string
+    _id: string
+}
+
+interface Chat {
+    chatId: string
+    chatWith: {
+        name: string
+        _id: string
+    }
+    lastMessage: message
+    messages: message[]
+}
+
+const ChatItem = ({ chat }: { chat: Chat }) => {
+
+    const getDate = () => {
+        const date = new Date(chat.lastMessage.date)
+        const today = new Date()
+        if (date.toDateString() === today.toDateString()) return date.toTimeString().split(' ')[0]
+        return date.toDateString()
+    }
+
+    return (
+        <ListItem>
+            <ListItemButton>
+                <ListItemIcon>
+                    <AccountCircle />
+                </ListItemIcon>
+                <ListItemText primary={chat.chatWith.name} secondary={chat.lastMessage.text} />
+                <Box sx={{ p: 3 }}>
+                    <Typography>{getDate()}</Typography>
+                </Box>
+            </ListItemButton>
+        </ListItem>
+    )
+}
 
 
 export const ChatPage = () => {
-    const [text, setText] = useState('')
-    const [chats, setChats] = useState([])
+    const [chats, setChats] = useState<Chat[]>([])
     const { request } = useFetch()
     const auth = useContext(AuthContext)
 
-    const send = async () => {
-        const data = await request({
-            url: '/api/chat/send',
-            body: {
-                text,
-                withId: "6211e0df4d03d1792cd1bb26"
-            },
-            method: 'POST',
-            headers: {
-                'Authorization': `Bearer ${auth.token}`
-            }
-        })
-        console.clear()
-        console.log(data)
-    }
+    useEffect(() => {
+        getChats()
+    }, [])
 
     const getChats = async () => {
         const data = await request({
@@ -33,19 +63,15 @@ export const ChatPage = () => {
                 'Authorization': `Bearer ${auth.token}`
             }
         })
-        console.log(data)
+        setChats(data.chats)
     }
 
-    useEffect(() => {
-        getChats()
-    }, [])
 
     return (
-        <div>
-            <div>
-                <TextField value={text} id="standard-basic" name="письмо" label="письмо" onChange={e => setText(e.currentTarget.value)} variant="standard" />
-                <Button variant="text" onClick={send} >отправить</Button>
-            </div>
+        <div className="w-full my-5 max-w-screen-xl flex-row">
+            <List className="w-96 h-full shadow-lg bg-teal-100">
+                {chats.map(chat => <ChatItem chat={chat} />)}
+            </List>
         </div>
     )
 } 

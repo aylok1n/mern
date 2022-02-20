@@ -9,7 +9,9 @@ const Layout = () => {
     return (
         <>
             <PrimarySearchAppBar />
-            <Outlet />
+            <div className='flex mt-2/6 items-center h-screen flex-col'>
+                <Outlet />
+            </div>
         </>
     )
 }
@@ -21,10 +23,10 @@ export const useRoutes = (isAuthenticated: boolean) => {
                 <Router>
                     <Routes>
                         <Route path="/" element={<Layout />}>
-                            <Route path="/" element={<ChatPage />} />
+                            <Route path="chat" element={<ChatPage />} />
                             <Route path="profile" element={<ProfilePage />} />
                         </Route>
-                        <Route path='*' element={<Navigate to="/"/>} />
+                        <Route path='*' element={<Navigate to="/chat" />} />
                     </Routes>
                 </Router>
             </div>
