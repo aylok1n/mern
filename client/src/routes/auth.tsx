@@ -92,14 +92,14 @@ export const AuthPage = () => {
                     <div className="flex flex-col w-54 gap-y-3">
                         <TextField value={form.email} id="standard-basic" name="email" label="Email" onChange={setInput} variant="standard" />
                         <TextField value={form.name} id="standard-basic" name="name" label="Name" onChange={setInput} variant="standard" />
-                        <TextField value={form.password} id="standard-basic" name="password" label="Password" onChange={setInput} variant="standard" />
+                        <TextField value={form.password} id="standard-basic" name="password" label="Password" type={'password'} onChange={setInput} variant="standard" />
                         <Button disabled={loader} onClick={register} variant="contained">Зарегайся</Button>
                     </div>
                 </TabPanel>
                 <TabPanel value={tab} index={1}>
                     <div className="flex flex-col w-54 gap-y-3">
                         <TextField value={form.email} id="standard-basic" name="email" label="Email" onChange={setInput} variant="standard" />
-                        <TextField value={form.password} id="standard-basic" name="password" label="Password" onChange={setInput} variant="standard" />
+                        <TextField value={form.password} id="standard-basic" name="password" label="Password" type={'password'} onChange={setInput} variant="standard" />
                         <Button disabled={loader} onClick={login} variant="contained">Захади</Button>
                     </div>
                 </TabPanel>

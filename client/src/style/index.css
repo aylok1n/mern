@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.main-view {
+    @apply flex items-center flex-col overflow-hidden pt-5;
+    height: calc(100vh - 64px);
+}

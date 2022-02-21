@@ -1,4 +1,3 @@
-import React from 'react'
 import { BrowserRouter as Router, Routes, Route, Outlet, Navigate } from 'react-router-dom'
 import { AuthPage } from './auth'
 import PrimarySearchAppBar from "../components/appBar"
@@ -7,12 +6,12 @@ import { ProfilePage } from "./profile"
 
 const Layout = () => {
     return (
-        <>
+        <div className='max-h-screen h-screen bg-slate-100 ' >
             <PrimarySearchAppBar />
-            <div className='flex mt-2/6 items-center h-screen flex-col'>
+            <div className='main-view'>
                 <Outlet />
             </div>
-        </>
+        </div>
     )
 }
 

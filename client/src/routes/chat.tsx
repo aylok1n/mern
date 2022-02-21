@@ -1,9 +1,8 @@
 import { useFetch } from "../hooks/useFetch";
-import { List, ListItem, ListItemButton, ListItemIcon, ListItemText, Typography, } from "@mui/material";
-import { useCallback, useContext, useEffect, useState } from "react";
+import { Button, List, ListItem, ListItemButton, ListItemIcon, ListItemText, TextField, Typography, } from "@mui/material";
+import { useCallback, useContext, useEffect, useRef, useState } from "react";
 import { AuthContext } from "../context/AuthContext";
-import { AccountCircle } from "@mui/icons-material";
-import { Box } from "@mui/system";
+import { AccountCircle, Send as SendIcon } from "@mui/icons-material";
 
 type message = {
     date: string
@@ -12,7 +11,7 @@ type message = {
     _id: string
 }
 
-interface Chat {
+interface IChat {
     chatId: string
     chatWith: {
         name: string
@@ -22,13 +21,13 @@ interface Chat {
     messages: message[]
 }
 
-const ChatItem = ({ chat, openChat }: { chat: Chat, openChat: (chat: Chat) => void }) => {
+const ChatItem = ({ chat, openChat }: { chat: IChat, openChat: (chat: IChat) => void }) => {
 
     const getDate = () => {
         const date = new Date(chat.lastMessage.date)
         const today = new Date()
         if (date.toDateString() === today.toDateString()) return date.toTimeString().split(' ')[0]
-        return date.toDateString()
+        return date.toLocaleDateString()
     }
 
     const ClickHandler = () => {
@@ -36,30 +35,104 @@ const ChatItem = ({ chat, openChat }: { chat: Chat, openChat: (chat: Chat) => vo
     }
 
     return (
-        <ListItem>
+        <ListItem sx={{ w: '18rem', position: 'relative' }}>
             <ListItemButton onClick={ClickHandler}>
-                <ListItemIcon>
+                <ListItemIcon sx={{ w: '3rem' }}>
                     <AccountCircle />
                 </ListItemIcon>
-                <ListItemText primary={chat.chatWith.name} secondary={chat.lastMessage.text} />
-                <Box sx={{ p: 3 }}>
-                    <Typography>{getDate()}</Typography>
-                </Box>
+                <ListItemText sx={{ minWidth: '10rem' }} primary={chat.chatWith.name} secondary={chat.lastMessage.text} />
+                <Typography variant={'body2'} component={'span'} sx={{ w: '3rem' }} >
+                    {getDate()}
+                </Typography>
             </ListItemButton>
-        </ListItem>
+        </ListItem >
+    )
+}
+
+const MessageItem = ({ message }: { message: message }) => {
+    const { userId } = useContext(AuthContext)
+    const self = userId === message.senderId
+
+    if (self) return (
+        <div className="w-full flex justify-end">
+            <div className="flex items-center justify-center rounded-2xl bg-slate-100 h-16 w-52 max-w-2xl" >
+                {message.text}
+            </div>
+        </div>
+    )
+
+
+    return (
+        <div className="w-full flex justify-start">
+            <div className="flex items-center justify-center rounded-2xl bg-slate-300  h-16 w-52 max-w-2xl" >
+                {message.text}
+            </div>
+        </div>
+    )
+}
+
+const Chat = ({ chat }: { chat: IChat }) => {
+    const [text, setText] = useState('')
+    const { request, loader } = useFetch()
+    const auth = useContext(AuthContext)
+    const inputRef = useRef<HTMLInputElement | null>(null)
+
+    const changeTextHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setText(e.currentTarget.value)
+    }
+
+    const sendMessage = async () => {
+        inputRef.current?.blur()
+        const data = await request({
+            url: '/api/chat/send',
+            body: {
+                text,
+                withId: chat.chatWith._id
+            },
+            method: "POST",
+            headers: {
+                Authorization: `Bearer ${auth.token}`
+            }
+        })
+        console.log(data)
+    }
+
+    return (
+        <div className="w-full h-full relative  px-2" >
+            <div className="h-5/6 w-full " >
+                {chat.messages.map((message) => <MessageItem key={message._id} message={message} />)}
+            </div>
+            <div className="relative flex-row w-full bottom-5 h-1/6 flex justify-center items-end" >
+                <TextField
+                    inputRef={inputRef}
+                    onChange={changeTextHandler}
+                    value={text}
+                    sx={{ maxHeight: 120, overflow: 'hidden' }}
+                    fullWidth
+                    size="small"
+                    multiline
+                    id="outlined-basic"
+                    variant="outlined"
+                />
+                <Button
+                    disabled={loader}
+                    sx={{ minHeight: 40 }}
+                    variant="contained"
+                    onClick={sendMessage}
+                >
+                    <SendIcon />
+                </Button>
+            </div>
+        </div >
     )
 }
 
 
 export const ChatsPage = () => {
-    const [chats, setChats] = useState<Chat[]>([])
-    const [opennedChat, setOpennedChat] = useState<Chat | null>(null)
+    const [chats, setChats] = useState<IChat[]>([])
+    const [opennedChat, setOpennedChat] = useState<IChat | null>(null)
     const { request } = useFetch()
     const auth = useContext(AuthContext)
-
-    useEffect(() => {
-        getChats()
-    }, [])
 
     const getChats = async () => {
         const data = await request({
@@ -71,20 +144,20 @@ export const ChatsPage = () => {
         setChats(data.chats)
     }
 
-    const openChat = useCallback((chat: Chat) => {
+    const openChat = useCallback((chat: IChat) => {
         setOpennedChat(chat)
-    }, [opennedChat])
+    }, [])
+
+    useEffect(() => {
+        getChats()
+    }, [])
 
     return (
-        <div className="w-full py-5 max-w-screen-xl flex flex-row">
-            <List className="max-w-96 h-screen shadow-lg bg-teal-100">
-                {chats.map(chat => <ChatItem openChat={openChat} chat={chat} />)}
+        <div className="w-full bg-white  p-5 h-full max-w-screen-xl flex flex-row">
+            <List className="max-w-96 h-full  border-r-2 border-gray-300  ">
+                {chats.map((chat, index) => <ChatItem key={index} openChat={openChat} chat={chat} />)}
             </List>
-            {!!opennedChat && (
-                <div className="w-full h-full bg-slate-400">
-                    {JSON.stringify(opennedChat)}
-                </div>
-            )}
+            {!!opennedChat && <Chat chat={opennedChat} />}
         </div>
     )
 } 
