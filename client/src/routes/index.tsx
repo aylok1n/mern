@@ -1,8 +1,11 @@
 import { BrowserRouter as Router, Routes, Route, Outlet, Navigate } from 'react-router-dom'
 import { AuthPage } from './auth'
 import PrimarySearchAppBar from "../components/appBar"
-import { ChatsPage } from "./chat"
+import { ChatsPage } from "./chats"
 import { ProfilePage } from "./profile"
+import { ChatContext } from '../context/ChatContext'
+import { useChat } from '../hooks/useChat'
+import { IAuthContext } from '../interfases/auth'
 
 const Layout = () => {
     return (
@@ -15,20 +18,22 @@ const Layout = () => {
     )
 }
 
-export const useRoutes = (isAuthenticated: boolean) => {
-    if (isAuthenticated) {
+export const useRoutes = (auth: IAuthContext) => {
+    const chat = useChat(auth)
+
+    if (auth.isAuthenticated) {
         return (
-            <div>
+            <ChatContext.Provider value={chat}>
                 <Router>
                     <Routes>
                         <Route path="/" element={<Layout />}>
-                            <Route path="chat" element={<ChatsPage />} />
+                            <Route path="/chat" element={<ChatsPage />} />
                             <Route path="profile" element={<ProfilePage />} />
                         </Route>
-                        <Route path='*' element={<Navigate to="/chat" />} />
+                        <Route path='*' element={<Navigate to="chat" />} />
                     </Routes>
                 </Router>
-            </div>
+            </ChatContext.Provider>
         )
     }
 
@@ -36,6 +41,7 @@ export const useRoutes = (isAuthenticated: boolean) => {
         <Router>
             <Routes>
                 <Route path="/" element={<AuthPage />} />
+                <Route path='*' element={<Navigate to="/" />} />
             </Routes>
         </Router>
     )

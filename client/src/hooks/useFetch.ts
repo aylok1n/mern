@@ -1,11 +1,5 @@
 import { useCallback, useState } from "react"
-
-interface FetchParams {
-    url: string,
-    method?: string,
-    body?: any,
-    headers?: any
-}
+import { FetchParams } from "../interfases/fetch"
 
 export const useFetch = () => {
     const [loader, setLoader] = useState<boolean>(false)
