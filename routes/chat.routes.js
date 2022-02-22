@@ -7,14 +7,7 @@ const router = Router()
 // get all chats
 router.get('/', auth, async (req, res) => {
     try {
-        let chats = await Chat.find(
-            {
-                $or: [
-                    { "members[0]": req.user.userId },
-                    { "members[1]": req.user.userId }
-                ]
-            }
-        )
+        let chats = await Chat.find({ members: { $all: req.user.userId } })
 
         if (!chats) return res.json({ chats: [] })
 
@@ -44,16 +37,23 @@ router.post('/send', auth, async (req, res) => {
             text,
             senderId: req.user.userId
         }
+
         const members = [withId, req.user.userId]
 
         let chat = await Chat.findOneAndUpdate(
             {
                 $or: [
                     {
-                        members
+                        $and: [
+                            { "members.0": members[0] },
+                            { "members.1": members[1] }
+                        ]
                     },
                     {
-                        members: [members[1], members[0]]
+                        $and: [
+                            { "members.0": members[1] },
+                            { "members.1": members[0] }
+                        ]
                     }
                 ]
             },
