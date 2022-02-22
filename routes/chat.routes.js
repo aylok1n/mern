@@ -53,7 +53,7 @@ router.post('/send', auth, async (req, res) => {
                         members
                     },
                     {
-                        members: members.reverse()
+                        members: [members[1], members[0]]
                     }
                 ]
             },
