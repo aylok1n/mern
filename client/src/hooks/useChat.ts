@@ -7,7 +7,8 @@ export const useChat = (auth: IAuthContext) => {
     const [chats, setChats] = useState<IChat[]>([])
     const [opennedChat, setOpennedChat] = useState<IChat | null>(null)
     const { request } = useFetch()
-    const { ready, token, isAuthenticated } = auth
+    const { ready, user, isAuthenticated } = auth
+    const token = user ? user.token : ''
 
     const getChats = useCallback(async () => {
         const data = await request({

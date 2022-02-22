@@ -67,7 +67,7 @@ router.post(
 
             const { email, password } = req.body
 
-            const user = await User.findOne({ email })
+            let user = await User.findOne({ email })
 
             if (!user) {
                 return res.status(400).json({ message: 'Пользователь не найден' })
@@ -85,7 +85,15 @@ router.post(
                 { expiresIn: '365d' }
             )
 
-            res.json({ token, userId: user.id })
+            const userData = {
+                id: user._id,
+                name: user.name,
+                image: user?.image || '',
+                email: user.email,
+                token
+            }
+
+            res.json({ userData })
 
         } catch (e) {
             res.status(500).json({ message: 'Что-то пошло не так, попробуйте снова' })

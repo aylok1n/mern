@@ -20,7 +20,6 @@ const Layout = () => {
 
 export const useRoutes = (auth: IAuthContext) => {
     const chat = useChat(auth)
-
     if (auth.isAuthenticated) {
         return (
             <ChatContext.Provider value={chat}>

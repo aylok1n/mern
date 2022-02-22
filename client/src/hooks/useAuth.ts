@@ -1,25 +1,25 @@
 import { useState, useCallback, useEffect } from 'react'
+import { IUserData } from '../interfases/auth'
 
 const storageName = 'userData'
 
 export const useAuth = () => {
-    const [token, setToken] = useState(null)
+    const [token, setToken] = useState<string | null>(null)
     const [ready, setReady] = useState(false)
-    const [userId, setUserId] = useState(null)
+    const [user, setUser] = useState<IUserData | null>(null)
 
-    const login = useCallback((jwtToken, id) => {
-        setToken(jwtToken)
-        setUserId(id)
-
+    const login = useCallback((userData: IUserData) => {
+        setToken(userData.token)
+        setUser(userData)
         localStorage.setItem(storageName, JSON.stringify({
-            userId: id, token: jwtToken
+            ...userData
         }))
     }, [])
 
 
     const logout = useCallback(() => {
         setToken(null)
-        setUserId(null)
+        setUser(null)
         localStorage.removeItem(storageName)
     }, [])
 
@@ -29,13 +29,13 @@ export const useAuth = () => {
             const data = JSON.parse(storeData)
 
             if (data && data.token) {
-                login(data.token, data.userId)
+                login(data)
             }
+
             setReady(true)
         }
 
     }, [login])
 
-
-    return { login, logout, token, userId, ready }
+    return { login, logout, token, ready, user, isAuthenticated: !!token }
 }

@@ -22,7 +22,8 @@ export const Chat = () => {
     const sendMessage = async () => {
         if (opennedChat) {
             inputRef.current?.blur()
-            const data = await request({
+            setText('')
+            await request({
                 url: '/api/chat/send',
                 body: {
                     text,
@@ -30,7 +31,7 @@ export const Chat = () => {
                 },
                 method: "POST",
                 headers: {
-                    Authorization: `Bearer ${auth.token}`
+                    Authorization: `Bearer ${auth.user ? auth.user.token : ''}`
                 }
             })
         }

@@ -64,12 +64,12 @@ export const AuthPage = () => {
     }
 
     const login = async () => {
-        const data = await request({
+        const response = await request({
             url: '/api/auth/login',
             body: form,
             method: 'POST'
         })
-        auth.login(data.token, data.userId)
+        auth.login(response.userData)
     }
 
     const changeTab = (event: React.SyntheticEvent<Element, Event>, value: any) => {

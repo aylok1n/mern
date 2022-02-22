@@ -3,8 +3,8 @@ import { AuthContext } from "../context/AuthContext"
 import { message } from "../interfases/chat"
 
 export const MessageItem = ({ message }: { message: message }) => {
-    const { userId } = useContext(AuthContext)
-    const self = userId === message.senderId
+    const { user } = useContext(AuthContext)
+    const self = user && user.id === message.senderId
 
     if (self) return (
         <div className="w-full flex justify-end">

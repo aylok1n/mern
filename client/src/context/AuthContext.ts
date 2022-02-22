@@ -1,11 +1,10 @@
 import { createContext } from 'react'
-import { IAuthContext } from '../interfases/auth'
+import { IAuthContext, IUserData } from '../interfases/auth'
 
 export const AuthContext = createContext<IAuthContext>({
-    token: null,
-    userId: null,
-    login: (jwtToken: string, id: string) => { },
+    login: (userData: IUserData) => { },
     logout: () => { },
     isAuthenticated: false,
+    user: null,
     ready: false
 })
