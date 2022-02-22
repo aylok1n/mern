@@ -155,7 +155,7 @@ export default function PrimarySearchAppBar() {
             component="div"
             sx={{ display: { xs: 'none', sm: 'block' } }}
           >
-            Экстра ёпта мессенгер
+            Odnogryppniki
           </Typography>
           <Search>
             <SearchIconWrapper>
