@@ -6,6 +6,7 @@ import { Send as SendIcon } from "@mui/icons-material"
 import { MessageItem } from "./messageItem"
 import { ChatContext } from "../context/ChatContext"
 import { message } from "../interfases/chat"
+import target from '../img/target.gif'
 
 
 export const Chat = () => {
@@ -39,15 +40,18 @@ export const Chat = () => {
 
     if (!opennedChat) {
         return (
-            <div>
-                чат открой придурок
+            <div className="flex flex-col justify-center items-center h-full w-full">
+                <div className="w-36">
+                    <img src={target} />
+                </div>
+                <p>Чат-то откройте...</p>
             </div>
         )
     }
 
     return (
         <div className="w-full h-full relative  px-2" >
-            <div className="h-5/6 w-full " >
+            <div className="h-5/6 w-full flex gap-y-4 flex-col" >
                 {opennedChat.messages.map((message: message) => <MessageItem key={message._id} message={message} />)}
             </div>
             <div className="relative flex-row w-full bottom-5 h-1/6 flex justify-center items-end" >

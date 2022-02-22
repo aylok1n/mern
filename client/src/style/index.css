@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Muller";
+  src: url("../../public/fonts/Muller/MullerLight.ttf");
+  font-style: light;
+  font-weight: 500;
+  font-display: swap;
+}
+
+* {
+    font-family: "Muller";
+}
+
+p {
+    font-weight: 600
+}
+
+div.css-1futezt-MuiTypography-root {
+    font-family: "Muller";
+    font-weight: 600
+}
+
 .main-view {
     @apply flex items-center flex-col overflow-hidden pt-5;
     height: calc(100vh - 64px);
