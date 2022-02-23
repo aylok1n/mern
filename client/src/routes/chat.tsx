@@ -1,12 +1,12 @@
 import { Button, TextField } from "@mui/material"
 import { useContext, useEffect, useRef, useState } from "react"
-import { AuthContext } from "../context/AuthContext"
 import { useFetch } from "../hooks/useFetch"
 import { Send as SendIcon } from "@mui/icons-material"
 import { MessageItem } from "../components/messageItem"
 import { message } from "../interfases/chat"
 import target from '../img/target.gif'
 import { useParams } from "react-router-dom"
+import { ChatContext } from "../context/ChatContext"
 
 export const NoOpenChat = () => (
     <div className="flex flex-col justify-center items-center h-full w-full">
@@ -18,11 +18,11 @@ export const NoOpenChat = () => (
 )
 
 export const OpenChat = () => {
-    const params = useParams()
-    const [messages, setMessages] = useState<message[]>([])
     const [text, setText] = useState('')
-    const { request, loader } = useFetch()
-    const auth = useContext(AuthContext)
+
+    const params = useParams()
+    const { loader } = useFetch()
+    const { sendMessage, messages, getChatMessages } = useContext(ChatContext)
     const inputRef = useRef<HTMLInputElement | null>(null)
 
     const changeTextHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -30,28 +30,16 @@ export const OpenChat = () => {
     }
 
     useEffect(() => {
-        request({
-            url: `/api/chat/${params.id}`,
-            headers: {
-                'Authorization': `Bearer ${auth.user ? auth.user.token : ''}`
-            }
-        }).then(setMessages)
-    }, [params, auth, request])
+        !!params.id && getChatMessages(params.id)
+    }, [params.id])
 
-    const sendMessage = async () => {
+    const send = () => {
+        sendMessage({
+            text,
+            chatId: params.id
+        })
         inputRef.current?.blur()
         setText('')
-        await request({
-            url: '/api/chat/send',
-            body: {
-                text,
-                chatId: params.id
-            },
-            method: "POST",
-            headers: {
-                Authorization: `Bearer ${auth.user ? auth.user.token : ''}`
-            }
-        })
     }
 
     return (
@@ -75,7 +63,7 @@ export const OpenChat = () => {
                     disabled={loader}
                     sx={{ minHeight: 40 }}
                     variant="contained"
-                    onClick={sendMessage}
+                    onClick={send}
                 >
                     <SendIcon />
                 </Button>
