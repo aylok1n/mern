@@ -19,12 +19,14 @@ p {
 }
 
 .main-view {
-    @apply flex items-center flex-col overflow-hidden pt-5;
-    height: calc(100vh - 64px);
+    @apply flex items-center flex-col overflow-hidden py-3;
+    overflow: hidden;
+    height: calc(100vh - 66px);
 }
 
 
 .scroll {
+    @apply scroll-smooth;
     overflow-y: overlay;
     overflow-x: hidden;
 }

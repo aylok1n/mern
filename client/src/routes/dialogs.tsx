@@ -8,9 +8,9 @@ export const ChatsPage = () => {
     const { chats } = useContext(ChatContext)
 
     return (
-        <div className="w-full bg-white p-5 pr-1 h-full max-w-screen-xl flex flex-row">
+        <div className="w-full bg-white p-5 pr-1 rounded border border-gray-100 h-full max-w-screen-xl flex flex-row">
             {chats.length !== 0 &&
-                <List className="w-5/12 scroll h-full border-r-2 border-gray-300  ">
+                <List className="w-5/12 scroll h-full border-r border-gray-100  ">
                     {chats.map((chat, index) => <ChatItem key={index} chat={chat} />)}
                 </List>
             }

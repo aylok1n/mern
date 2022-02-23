@@ -1,10 +1,10 @@
 import { ListItem, ListItemButton, ListItemIcon, ListItemText, Typography, } from "@mui/material";
 import { AccountCircle } from "@mui/icons-material";
 import { IChat } from "../interfases/chat";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 export const ChatItem = ({ chat }: { chat: IChat }) => {
-
+    const selected = useParams()?.id?.substring(1) === chat.chatId
     const getDate = () => {
         const date = new Date(chat.lastMessage.date)
         const today = new Date()
@@ -14,9 +14,9 @@ export const ChatItem = ({ chat }: { chat: IChat }) => {
 
 
     return (
-        <Link to={`/chat/:${chat.chatId}`}>
-            <ListItem sx={{ w: '18rem', position: 'relative' }}>
-                <ListItemButton>
+        <Link to={`/chat/:${chat.chatId}`} className='relative w-80 rounded-sm'>
+            <ListItem>
+                <ListItemButton selected={selected} >
                     <ListItemIcon sx={{ w: '3rem' }}>
                         <AccountCircle />
                     </ListItemIcon>
