@@ -16,6 +16,8 @@ import MoreIcon from '@mui/icons-material/MoreVert';
 import { useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
 import { Link } from 'react-router-dom';
+import Modal from '@mui/material/Modal';
+import { Button } from '@mui/material';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -61,6 +63,9 @@ export default function PrimarySearchAppBar() {
   const auth = useContext(AuthContext)
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
+  const [openModal, setOpenModal] = React.useState(false);
+  const handleOpenModal = () => setOpenModal(true);
+  const handleCloseModal = () => setOpenModal(false);
 
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
@@ -80,6 +85,18 @@ export default function PrimarySearchAppBar() {
 
   const handleMobileMenuOpen = (event: any) => {
     setMobileMoreAnchorEl(event.currentTarget);
+  };
+
+  const styleModal = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 400,
+    bgcolor: 'background.paper',
+    border: '2px solid #000',
+    boxShadow: 24,
+    p: 4,
   };
 
   const renderMenu = <Menu
@@ -102,7 +119,11 @@ export default function PrimarySearchAppBar() {
         Профиль
       </Link>
     </MenuItem>
-    <MenuItem onClick={auth.logout}>Разлогинься</MenuItem>
+    <MenuItem onClick={handleOpenModal}>
+      <a>
+      Разлогинься
+      </a>
+    </MenuItem>
   </Menu>
 
 
@@ -203,6 +224,33 @@ export default function PrimarySearchAppBar() {
       </AppBar>
       {renderMobileMenu}
       {renderMenu}
+      <Modal
+        open={openModal}
+        onClose={handleCloseModal}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={styleModal}>
+          <Typography id="modal-modal-title" variant="h6" component="h2">
+            Точно разлогиниться хочешь?
+          </Typography>
+          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+            Если ты разлогинишься и больше не зайдешь, разработчики одногруппников расстроятся...
+          </Typography>
+          <div className='flex justify-between pt-5'>
+            <Button
+              onClick={handleCloseModal}
+              variant="contained" color="success">
+              Остаться
+            </Button>
+            <Button
+              onClick={auth.logout}
+              variant="outlined" color="error">
+              Выйти
+            </Button>
+          </div>
+        </Box>
+      </Modal>
     </Box>
   );
 }

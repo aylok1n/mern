@@ -10,9 +10,11 @@ export const ChatsPage = () => {
 
     return (
         <div className="w-full bg-white  p-5 h-full max-w-screen-xl flex flex-row">
-            <List className="max-w-96 h-full  border-r-2 border-gray-300  ">
-                {chats.map((chat, index) => <ChatItem key={index} openChat={openChat} chat={chat} />)}
-            </List>
+            {chats.length != 0 &&
+                <List className="max-w-96 h-full  border-r-2 border-gray-300  ">
+                    {chats.map((chat, index) => <ChatItem key={index} openChat={openChat} chat={chat} />)}
+                </List>
+            }
             <Chat />
         </div>
     )
