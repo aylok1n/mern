@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7f517fdd.css",
+    "main.js": "/static/js/main.008a504f.js",
+    "static/media/target.gif": "/static/media/target.1bc4e34f791df26703cb.gif",
+    "static/media/MullerLight.ttf": "/static/media/MullerLight.351fcd30b12606e1a5de.ttf",
+    "index.html": "/index.html",
+    "main.7f517fdd.css.map": "/static/css/main.7f517fdd.css.map",
+    "main.008a504f.js.map": "/static/js/main.008a504f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7f517fdd.css",
+    "static/js/main.008a504f.js"
+  ]
+}
