@@ -1,11 +1,12 @@
 import { BrowserRouter as Router, Routes, Route, Outlet, Navigate } from 'react-router-dom'
 import { AuthPage } from './auth'
 import PrimarySearchAppBar from "../components/appBar"
-import { ChatsPage } from "./chats"
+import { ChatsPage } from "./dialogs"
 import { ProfilePage } from "./profile"
 import { ChatContext } from '../context/ChatContext'
 import { useChat } from '../hooks/useChat'
 import { IAuthContext } from '../interfases/auth'
+import { NoOpenChat, OpenChat } from './chat'
 
 const Layout = () => {
     return (
@@ -26,10 +27,14 @@ export const useRoutes = (auth: IAuthContext) => {
                 <Router>
                     <Routes>
                         <Route path="/" element={<Layout />}>
-                            <Route path="/chat" element={<ChatsPage />} />
+                            <Route index element={<Navigate to="/chat" />} />
+                            <Route path="/chat" element={<ChatsPage />}>
+                                <Route index element={<NoOpenChat />} />
+                                <Route path="/chat:id" element={<OpenChat />} />
+                            </Route>
                             <Route path="profile" element={<ProfilePage />} />
                         </Route>
-                        <Route path='*' element={<Navigate to="chat" />} />
+                        <Route path='*' element={<Navigate to="/chat" />} />
                     </Routes>
                 </Router>
             </ChatContext.Provider>

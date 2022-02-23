@@ -12,5 +12,4 @@ export interface IChat {
         _id: string
     }
     lastMessage: message
-    messages: message[]
 }

@@ -5,7 +5,6 @@ import { useFetch } from "./useFetch"
 
 export const useChat = (auth: IAuthContext) => {
     const [chats, setChats] = useState<IChat[]>([])
-    const [opennedChat, setOpennedChat] = useState<IChat | null>(null)
     const { request } = useFetch()
     const { ready, user, isAuthenticated } = auth
     const token = user ? user.token : ''
@@ -20,13 +19,10 @@ export const useChat = (auth: IAuthContext) => {
         setChats(data.chats)
     }, [token])
 
-    const openChat = useCallback((chat: IChat) => {
-        setOpennedChat(chat)
-    }, [])
 
     useEffect(() => {
         if (ready && isAuthenticated) getChats()
     }, [ready, isAuthenticated, getChats])
 
-    return { chats, getChats, opennedChat, openChat }
+    return { chats, getChats }
 }

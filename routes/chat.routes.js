@@ -4,7 +4,7 @@ const Chat = require('../models/Chat')
 const User = require('../models/User')
 const router = Router()
 
-// get all chats
+// get all dialogs
 router.get('/', auth, async (req, res) => {
     try {
         let chats = await Chat.find({ members: { $all: req.user.userId } })
@@ -18,7 +18,6 @@ router.get('/', auth, async (req, res) => {
                 chatId: chat._id,
                 chatWith: member,
                 lastMessage: chat.messages[chat.messages.length - 1],
-                messages: chat.messages
             }
         }))
 
@@ -30,45 +29,42 @@ router.get('/', auth, async (req, res) => {
     }
 })
 
+// get chat by id
+router.get('/:id', auth, async (req, res) => {
+    try {
+        const chat = await Chat.findById(req.params.id.substring(1)).select('messages')
+        const response = {
+            messages: chat.messages
+        }
+        res.json(chat.messages)
+
+    } catch (error) {
+        console.error(error)
+        res.status(500).json({ message: 'Что-то пошло не так, попробуйте снова' })
+    }
+})
+
 router.post('/send', auth, async (req, res) => {
     try {
-        const { text, withId } = req.body
+        const { text, chatId, withId } = req.body
 
         const message = {
             text,
             senderId: req.user.userId
         }
 
-        const members = [withId, req.user.userId]
-
-        if (withId === req.user.userId) return res.status(403).json({ status: false, error: "Себе не пиши да" })
-
-        let chat = await Chat.findOneAndUpdate(
-            {
-                $or: [
-                    {
-                        $and: [
-                            { "members.0": withId },
-                            { "members.1": req.user.userId }
-                        ]
-                    },
-                    {
-                        $and: [
-                            { "members.0": req.user.userId },
-                            { "members.1": withId }
-                        ]
+        if (chatId) {
+            const chat = await Chat.findByIdAndUpdate(chatId.substring(1),
+                {
+                    $push: {
+                        messages: message
                     }
-                ]
-            },
-            {
-                $push: {
-                    messages: message
                 }
-            }
-        )
-
-        if (!chat) {
-            chat = new Chat({
+            )
+        }
+        else if (withId) {
+            const members = [req.user.userId, withId]
+            const chat = new Chat({
                 members,
                 messages: [message]
             })

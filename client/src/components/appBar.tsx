@@ -121,7 +121,7 @@ export default function PrimarySearchAppBar() {
     </MenuItem>
     <MenuItem onClick={handleOpenModal}>
       <a>
-      Разлогинься
+        Разлогинься
       </a>
     </MenuItem>
   </Menu>
@@ -142,7 +142,7 @@ export default function PrimarySearchAppBar() {
     open={isMobileMenuOpen}
     onClose={handleMobileMenuClose}
   >
-    <Link to="/chat">
+    <Link to="/">
       <MenuItem>
         <IconButton size="large" aria-label="show 4 new mails" color="inherit">
           <Badge badgeContent={4} color="error">
@@ -183,13 +183,13 @@ export default function PrimarySearchAppBar() {
               <SearchIcon />
             </SearchIconWrapper>
             <StyledInputBase
-              placeholder="Search…"
+              placeholder="Поиск... его нету"
               inputProps={{ 'aria-label': 'Поиск' }}
             />
           </Search>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-            <Link to="/chat">
+            <Link to="/">
               <IconButton size="large" aria-label="show 4 new mails" color="inherit">
                 <Badge badgeContent={4} color="error">
                   <MailIcon />
