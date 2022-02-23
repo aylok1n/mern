@@ -12,7 +12,7 @@ router.get('/', auth, async (req, res) => {
         if (!chats) return res.json({ chats: [] })
 
         const response = await Promise.all(chats.map(async chat => {
-            const userId = chat.members.find(member => `new ObjectId("${req.user.userId}")` !== member)
+            const userId = chat.members.find(member => req.user.userId !== member.toString()).toString()
             const member = await User.findById(userId).select('name image')
             return {
                 chatId: chat._id,
@@ -40,8 +40,6 @@ router.post('/send', auth, async (req, res) => {
         }
 
         const members = [withId, req.user.userId]
-
-        console.log(members)
 
         if (withId === req.user.userId) return res.status(403).json({ status: false, error: "Себе не пиши да" })
 
