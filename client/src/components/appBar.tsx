@@ -18,6 +18,7 @@ import { AuthContext } from "../context/AuthContext";
 import { Link } from 'react-router-dom';
 import Modal from '@mui/material/Modal';
 import { Button } from '@mui/material';
+import { useFetch } from '../hooks/useFetch';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -61,6 +62,9 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 export default function PrimarySearchAppBar() {
   const auth = useContext(AuthContext)
+  const { request } = useFetch()
+  const [users, setUsers] = React.useState([])
+
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
   const [openModal, setOpenModal] = React.useState(false);
@@ -86,6 +90,19 @@ export default function PrimarySearchAppBar() {
   const handleMobileMenuOpen = (event: any) => {
     setMobileMoreAnchorEl(event.currentTarget);
   };
+
+  const handleSearch = async (event: any) => {
+    const value = event.currentTarget.value
+    if (value) {
+      const data = await request({
+        url: '/api/search/users?' + new URLSearchParams({ search: event.currentTarget.value }),
+        headers: {
+          Authorization: `Bearer ${auth.user ? auth.user.token : ''}`
+        }
+      })
+      setUsers(data.users)
+    }
+  }
 
   const styleModal = {
     position: 'absolute',
@@ -183,6 +200,7 @@ export default function PrimarySearchAppBar() {
               <SearchIcon />
             </SearchIconWrapper>
             <StyledInputBase
+              onChange={handleSearch}
               placeholder="Поиск... его нету"
               inputProps={{ 'aria-label': 'Поиск' }}
             />
@@ -240,7 +258,7 @@ export default function PrimarySearchAppBar() {
           <div className='flex justify-between pt-5'>
             <Button
               onClick={handleCloseModal}
-              variant="contained" color="success">
+              variant="contained" color='primary'>
               Остаться
             </Button>
             <Button
