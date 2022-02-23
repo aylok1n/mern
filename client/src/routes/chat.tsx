@@ -43,11 +43,8 @@ export const OpenChat = () => {
     }
 
     return (
-        <div className="w-full h-full relative px-2" >
-            <div className="h-5/6 w-full flex gap-y-4 flex-col" >
-                {messages.map((message: message) => <MessageItem key={message._id} message={message} />)}
-            </div>
-            <div className="relative flex-row w-full bottom-5 h-1/6 flex justify-center items-end" >
+        <div className="w-full h-full flex flex-col-reverse" >
+            <div className="flex-row w-full flex justify-center items-end px-2 mt-5" >
                 <TextField
                     inputRef={inputRef}
                     onChange={changeTextHandler}
@@ -67,6 +64,9 @@ export const OpenChat = () => {
                 >
                     <SendIcon />
                 </Button>
+            </div>
+            <div className="w-full flex gap-y-4 flex-col-reverse scroll px-2 flex-1" >
+                {messages.map((message: message) => <MessageItem key={message._id} message={message} />)}
             </div>
         </div >
     )

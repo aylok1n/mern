@@ -21,6 +21,7 @@ export const useChat = (auth: IAuthContext) => {
     }, [user])
 
     const getChatMessages = async (chatId: string) => {
+        setMessages([])
         const data = await request({
             url: `/api/chat/${chatId}`,
             headers: {

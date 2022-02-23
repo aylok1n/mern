@@ -22,3 +22,41 @@ p {
     @apply flex items-center flex-col overflow-hidden pt-5;
     height: calc(100vh - 64px);
 }
+
+
+.scroll {
+    overflow-y: overlay;
+    overflow-x: hidden;
+}
+
+.scroll::-webkit-scrollbar-track {
+	-webkit-box-shadow: transparent;
+	background-color: transparent;
+    width: 2px;
+}
+.scroll::-webkit-scrollbar {
+	width: 2px;
+	background-color: transparent;
+}
+.scroll::-webkit-scrollbar-thumb {
+    border-radius: 40px;
+	background-color: transparent;
+}
+
+.scroll::-webkit-scrollbar-corner {
+    background-color: aqua;
+}
+
+.showScroll::-webkit-scrollbar-track {
+	background-color: transparent;
+    width: 2px;
+    border-radius: 40px;
+}
+.showScroll::-webkit-scrollbar {
+	width: 4px;
+	background-color: #F5F5F5;
+}
+.showScroll::-webkit-scrollbar-thumb {
+    border-radius: 40px;
+	background-color: rgba(0,0,0,0.4);
+}

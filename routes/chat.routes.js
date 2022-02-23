@@ -33,10 +33,8 @@ router.get('/', auth, async (req, res) => {
 router.get('/:id', auth, async (req, res) => {
     try {
         const chat = await Chat.findById(req.params.id.substring(1)).select('messages')
-        const response = {
-            messages: chat.messages
-        }
-        res.json(chat.messages)
+
+        res.json(chat.messages.reverse())
 
     } catch (error) {
         console.error(error)
