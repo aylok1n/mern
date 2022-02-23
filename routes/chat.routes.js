@@ -12,7 +12,8 @@ router.get('/', auth, async (req, res) => {
         if (!chats) return res.json({ chats: [] })
 
         const response = await Promise.all(chats.map(async chat => {
-            const member = await User.findById(chat.members.find(member => member !== req.user.userId)).select('name image')
+            const userId = chat.members.find(member => `new ObjectId("${req.user.userId}")` !== member)
+            const member = await User.findById(userId).select('name image')
             return {
                 chatId: chat._id,
                 chatWith: member,
@@ -40,19 +41,23 @@ router.post('/send', auth, async (req, res) => {
 
         const members = [withId, req.user.userId]
 
+        console.log(members)
+
+        if (withId === req.user.userId) return res.status(403).json({ status: false, error: "Себе не пиши да" })
+
         let chat = await Chat.findOneAndUpdate(
             {
                 $or: [
                     {
                         $and: [
-                            { "members.0": members[0] },
-                            { "members.1": members[1] }
+                            { "members.0": withId },
+                            { "members.1": req.user.userId }
                         ]
                     },
                     {
                         $and: [
-                            { "members.0": members[1] },
-                            { "members.1": members[0] }
+                            { "members.0": req.user.userId },
+                            { "members.1": withId }
                         ]
                     }
                 ]
