@@ -84,23 +84,23 @@ export const AuthPage = () => {
             <div className="flex mt-2/6 items-center h-screen flex-col">
                 <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
                     <Tabs value={tab} onChange={changeTab} aria-label="basic tabs example">
-                        <Tab label="Регистрация" {...a11yProps(0)} />
-                        <Tab label="Авторизация" {...a11yProps(1)} />
+                        <Tab label="Авторизация" {...a11yProps(0)} />
+                        <Tab label="Регистрация" {...a11yProps(1)} />
                     </Tabs>
                 </Box>
                 <TabPanel value={tab} index={0}>
                     <div className="flex flex-col w-54 gap-y-3">
                         <TextField value={form.email} id="standard-basic" name="email" label="Email" onChange={setInput} variant="standard" />
-                        <TextField value={form.name} id="standard-basic" name="name" label="Name" onChange={setInput} variant="standard" />
                         <TextField value={form.password} id="standard-basic" name="password" label="Password" type={'password'} onChange={setInput} variant="standard" />
-                        <Button disabled={loader} onClick={register} variant="contained">Зарегайся</Button>
+                        <Button disabled={loader} onClick={login} variant="contained">Захади</Button>
                     </div>
                 </TabPanel>
                 <TabPanel value={tab} index={1}>
                     <div className="flex flex-col w-54 gap-y-3">
                         <TextField value={form.email} id="standard-basic" name="email" label="Email" onChange={setInput} variant="standard" />
+                        <TextField value={form.name} id="standard-basic" name="name" label="Name" onChange={setInput} variant="standard" />
                         <TextField value={form.password} id="standard-basic" name="password" label="Password" type={'password'} onChange={setInput} variant="standard" />
-                        <Button disabled={loader} onClick={login} variant="contained">Захади</Button>
+                        <Button disabled={loader} onClick={register} variant="contained">Зарегайся</Button>
                     </div>
                 </TabPanel>
             </div>
