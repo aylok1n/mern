@@ -50,7 +50,7 @@ export const Chat = () => {
     }
 
     return (
-        <div className="w-full h-full relative  px-2" >
+        <div className="w-full h-full relative px-2" >
             <div className="h-5/6 w-full flex gap-y-4 flex-col" >
                 {opennedChat.messages.map((message: message) => <MessageItem key={message._id} message={message} />)}
             </div>
