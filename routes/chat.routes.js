@@ -21,7 +21,7 @@ router.get('/', auth, async (req, res) => {
             }
         }))
 
-        res.json({ chats: response })
+        res.status(200).json({ chats: response })
 
     } catch (error) {
         console.error(error)
@@ -32,9 +32,21 @@ router.get('/', auth, async (req, res) => {
 // get chat by id
 router.get('/:id', auth, async (req, res) => {
     try {
-        const chat = await Chat.findById(req.params.id.substring(1)).select('messages')
+        const chat = await Chat.findById(req.params.id.substring(1)).select('messages members')
 
-        res.json(chat.messages.reverse())
+        if (chat) {
+            const memberId = chat.members.find(memberId => memberId.toString() !== req.params.id)
+            if (memberId) {
+                const member = await User.findById(memberId).select('_id name')
+                if (member) {
+                    return res.json({
+                        messages: chat.messages.reverse(),
+                        member
+                    })
+                }
+            }
+        }
+        else throw new Error()
 
     } catch (error) {
         console.error(error)

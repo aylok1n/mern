@@ -14,7 +14,7 @@ export const ChatItem = ({ chat }: { chat: IChat }) => {
 
 
     return (
-        <Link to={`/chat/:${chat.chatId}`} className='relative w-80 rounded-sm'>
+        <Link to={`/chat/:${chat.chatId}`} className='relative w-80 rounded-sm mr-5'>
             <ListItem>
                 <ListItemButton selected={selected} >
                     <ListItemIcon sx={{ w: '3rem' }}>

@@ -6,30 +6,39 @@ import { useFetch } from "./useFetch"
 export const useChat = (auth: IAuthContext) => {
     const [chats, setChats] = useState<IChat[]>([])
     const [messages, setMessages] = useState<message[]>([])
+    const [chatWith, setChatwith] = useState<IChat['chatWith'] | null>(null)
 
     const { request } = useFetch()
     const { ready, user, isAuthenticated } = auth
 
     const getChats = useCallback(async () => {
-        const data = await request({
-            url: '/api/chat',
-            headers: {
-                'Authorization': `Bearer ${user ? user.token : ''}`
-            }
-        })
-        setChats(data.chats)
-    }, [user])
+        if (user && user.token) {
+            const data = await request({
+                url: '/api/chat',
+                headers: {
+                    'Authorization': `Bearer ${user.token}`
+                }
+            })
+            setChats(data.chats)
+        }
+    }, [user, ready])
 
     const getChatMessages = async (chatId: string) => {
         setMessages([])
+        setChatwith(null)
         const data = await request({
             url: `/api/chat/${chatId}`,
             headers: {
                 'Authorization': `Bearer ${user ? user.token : ''}`
             }
         })
-        setMessages(data)
+        setChatwith(data.member)
+        setMessages(data.messages)
     }
+
+    const clearChatHeader = useCallback(() => {
+        setChatwith(null)
+    }, [])
 
     const sendMessage = useCallback(async ({ text, chatId, withId }) => {
         await request({
@@ -40,12 +49,12 @@ export const useChat = (auth: IAuthContext) => {
                 Authorization: `Bearer ${user ? user.token : ''}`
             }
         })
-    }, [auth])
+    }, [user])
 
 
     useEffect(() => {
         if (ready && isAuthenticated) getChats()
-    }, [ready, isAuthenticated, getChats])
+    }, [ready, isAuthenticated])
 
-    return { chats, getChats, sendMessage, messages, getChatMessages }
+    return { chats, getChats, sendMessage, messages, getChatMessages, chatWith, clearChatHeader }
 }

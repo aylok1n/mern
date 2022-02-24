@@ -8,14 +8,22 @@ import target from '../img/target.gif'
 import { useParams } from "react-router-dom"
 import { ChatContext } from "../context/ChatContext"
 
-export const NoOpenChat = () => (
-    <div className="flex flex-col justify-center items-center h-full w-full">
-        <div className="w-36">
-            <img src={target} alt={''} />
-        </div>
-        <p>Чат-то откройте...</p>
-    </div>
-)
+export const NoOpenChat = () => {
+    const { clearChatHeader } = useContext(ChatContext)
+
+    useEffect(() => {
+        clearChatHeader()
+    }, [])
+
+    return (
+        < div className="flex flex-col justify-center items-center h-full w-full" >
+            <div className="w-36">
+                <img src={target} alt={''} />
+            </div>
+            <p>Чат-то откройте...</p>
+        </div >
+    )
+}
 
 export const OpenChat = () => {
     const [text, setText] = useState('')
@@ -49,7 +57,7 @@ export const OpenChat = () => {
                     inputRef={inputRef}
                     onChange={changeTextHandler}
                     value={text}
-                    sx={{ maxHeight: 120, overflow: 'hidden' }}
+                    sx={{ maxHeight: 120, overflow: 'hidden', pr: 1 }}
                     fullWidth
                     size="small"
                     multiline

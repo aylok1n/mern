@@ -10,7 +10,7 @@ import { NoOpenChat, OpenChat } from './chat'
 
 const Layout = () => {
     return (
-        <div className='max-h-screen h-screen bg-slate-100 border-2 border-gray-100' >
+        <div className='max-h-screen h-screen bg-slate-100' >
             <PrimarySearchAppBar />
             <div className='main-view'>
                 <Outlet />

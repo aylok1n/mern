@@ -3,10 +3,12 @@ import { IChat, message } from "../interfases/chat";
 
 interface IChatContext {
     chats: IChat[]
-    getChats: () => void,
+    getChats: () => void
     sendMessage: ({ text, chatId, withId }: { text: string, chatId?: string, withId?: string }) => void
-    messages: message[],
+    messages: message[]
     getChatMessages: (chatId: string) => void
+    chatWith: IChat['chatWith'] | null
+    clearChatHeader: () => void
 }
 
 export const ChatContext = createContext<IChatContext>({
@@ -14,5 +16,7 @@ export const ChatContext = createContext<IChatContext>({
     getChats: () => { },
     sendMessage: ({ text, chatId, withId }) => { },
     messages: [],
-    getChatMessages: (chatId) => { }
+    getChatMessages: (chatId) => { },
+    chatWith: null,
+    clearChatHeader: () => { }
 })
