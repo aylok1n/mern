@@ -41,12 +41,13 @@ export const OpenChat = () => {
         !!params.id && getChatMessages(params.id)
     }, [params.id])
 
-    const send = () => {
+    const send = async () => {
+        inputRef.current?.blur()
         sendMessage({
             text,
             chatId: params.id
         })
-        inputRef.current?.blur()
+        !!params.id && getChatMessages(params.id)
         setText('')
     }
 

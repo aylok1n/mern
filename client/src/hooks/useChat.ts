@@ -24,8 +24,6 @@ export const useChat = (auth: IAuthContext) => {
     }, [user, ready])
 
     const getChatMessages = async (chatId: string) => {
-        setMessages([])
-        setChatwith(null)
         const data = await request({
             url: `/api/chat/${chatId}`,
             headers: {
@@ -41,14 +39,16 @@ export const useChat = (auth: IAuthContext) => {
     }, [])
 
     const sendMessage = useCallback(async ({ text, chatId, withId }) => {
-        await request({
-            url: '/api/chat/send',
-            body: { text, chatId, withId },
-            method: "POST",
-            headers: {
-                Authorization: `Bearer ${user ? user.token : ''}`
-            }
-        })
+        if (text) {
+            await request({
+                url: '/api/chat/send',
+                body: { text, chatId, withId },
+                method: "POST",
+                headers: {
+                    Authorization: `Bearer ${user ? user.token : ''}`
+                }
+            })
+        }
     }, [user])
 
 

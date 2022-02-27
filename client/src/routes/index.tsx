@@ -30,11 +30,11 @@ export const useRoutes = (auth: IAuthContext) => {
                             <Route index element={<Navigate to="/chat" />} />
                             <Route path="/chat" element={<ChatsPage />}>
                                 <Route index element={<NoOpenChat />} />
-                                <Route path="/chat:id" element={<OpenChat />} />
+                                <Route path=":id" element={<OpenChat />} />
                             </Route>
                             <Route path="profile" element={<ProfilePage />} />
                         </Route>
-                        <Route path='*' element={<Navigate to="/chat" />} />
+                        <Route path='*' element={<Navigate to="/" />} />
                     </Routes>
                 </Router>
             </ChatContext.Provider>
