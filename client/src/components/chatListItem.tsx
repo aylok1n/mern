@@ -14,14 +14,22 @@ export const ChatItem = ({ chat }: { chat: IChat }) => {
 
 
     return (
-        <Link to={`/chat/:${chat.chatId}`} className='relative w-80 rounded-sm mr-5'>
+        <Link to={`/chat/:${chat.chatId}`} className='relative w-full rounded-sm mr-5'>
             <ListItem>
                 <ListItemButton selected={selected} >
-                    <ListItemIcon sx={{ w: '3rem' }}>
+                    <ListItemIcon sx={{ w: '2rem' }}>
                         <AccountCircle />
                     </ListItemIcon>
-                    <ListItemText sx={{ minWidth: '10rem' }} primary={chat.chatWith.name} secondary={chat.lastMessage.text} />
-                    <Typography variant={'body2'} component={'span'} sx={{ w: '3rem' }} >
+                    <ListItemText
+                        className="w-full"
+                        primary={chat.chatWith.name}
+                        secondary={chat.lastMessage.text}
+                    />
+                    <Typography
+                        variant={'body2'}
+                        component={'span'}
+                        sx={{ w: '3rem' }}
+                    >
                         {getDate()}
                     </Typography>
                 </ListItemButton>

@@ -51,7 +51,7 @@ export const OpenChat = () => {
     }
 
     return (
-        <div className="w-full h-full flex flex-col-reverse" >
+        <div className="w-full flex flex-col-reverse" >
             <div className="flex-row w-full flex justify-center items-end px-2 mt-5" >
                 <TextField
                     inputRef={inputRef}
