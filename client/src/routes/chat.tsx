@@ -60,6 +60,10 @@ export const OpenChat = () => {
         setText('')
     }
 
+    const enterKeyHandler = (e: React.KeyboardEvent<HTMLDivElement>) => {
+        if (e.key === 'Enter' && !e.shiftKey) send()
+    }
+
     return (
         <div className="w-full flex flex-col-reverse" >
             <div className="flex-row w-full flex justify-center items-end px-2 mt-5" >
@@ -73,6 +77,7 @@ export const OpenChat = () => {
                     multiline
                     id="outlined-basic"
                     variant="outlined"
+                    onKeyPress={enterKeyHandler}
                 />
                 <Button
                     disabled={loader}
