@@ -5,7 +5,6 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import InputBase from '@mui/material/InputBase';
 import Badge from '@mui/material/Badge';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
@@ -18,7 +17,7 @@ import { AuthContext } from "../context/AuthContext";
 import { Link } from 'react-router-dom';
 import Modal from '@mui/material/Modal';
 import { Button } from '@mui/material';
-import { useFetch } from '../hooks/useFetch';
+import SeachInput from './search';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -46,24 +45,8 @@ const SearchIconWrapper = styled('div')(({ theme }) => ({
   justifyContent: 'center',
 }));
 
-const StyledInputBase = styled(InputBase)(({ theme }) => ({
-  color: 'inherit',
-  '& .MuiInputBase-input': {
-    padding: theme.spacing(1, 1, 1, 0),
-    // vertical padding + font size from searchIcon
-    paddingLeft: `calc(1em + ${theme.spacing(4)})`,
-    transition: theme.transitions.create('width'),
-    width: '100%',
-    [theme.breakpoints.up('md')]: {
-      width: '20ch',
-    },
-  },
-}));
-
 export default function PrimarySearchAppBar() {
   const auth = useContext(AuthContext)
-  const { request } = useFetch()
-  const [users, setUsers] = React.useState([])
 
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
@@ -90,19 +73,6 @@ export default function PrimarySearchAppBar() {
   const handleMobileMenuOpen = (event: any) => {
     setMobileMoreAnchorEl(event.currentTarget);
   };
-
-  const handleSearch = async (event: any) => {
-    const value = event.currentTarget.value
-    if (value) {
-      const data = await request({
-        url: '/api/search/users?' + new URLSearchParams({ search: event.currentTarget.value }),
-        headers: {
-          Authorization: `Bearer ${auth.user ? auth.user.token : ''}`
-        }
-      })
-      setUsers(data.users)
-    }
-  }
 
   const styleModal = {
     position: 'absolute',
@@ -196,14 +166,10 @@ export default function PrimarySearchAppBar() {
             Odnogryppniki
           </Typography>
           <Search>
-            <SearchIconWrapper>
+            {/* <SearchIconWrapper>
               <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
-              onChange={handleSearch}
-              placeholder="Поиск... его нету"
-              inputProps={{ 'aria-label': 'Поиск' }}
-            />
+            </SearchIconWrapper> */}
+            <SeachInput />
           </Search>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
