@@ -19,9 +19,9 @@ p {
 }
 
 .main-view {
-    @apply flex items-center flex-col overflow-hidden py-3;
+    @apply flex items-center flex-col overflow-hidden h-screen;
     overflow: hidden;
-    height: calc(100vh - 66px);
+    padding-top: 64px;
 }
 
 

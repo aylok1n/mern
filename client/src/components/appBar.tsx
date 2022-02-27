@@ -185,7 +185,7 @@ export default function PrimarySearchAppBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" className='flex items-center' >
+      <AppBar  className='flex items-center' >
         <Toolbar className='w-full max-w-screen-xl'>
           <Typography
             variant="h6"

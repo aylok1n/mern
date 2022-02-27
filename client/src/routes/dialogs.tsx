@@ -16,7 +16,7 @@ export const ChatsPage = () => {
     };
 
     return (
-        <div className="w-full bg-white  p-5 pr-1 rounded border border-gray-100 h-full max-w-screen-xl flex flex-row">
+        <div className="w-full bg-white pr-1 rounded border border-gray-100 h-full max-w-screen-xl flex flex-row">
             <List
                 className="scroll flex h-full  border-gray-100"
                 sx={{
