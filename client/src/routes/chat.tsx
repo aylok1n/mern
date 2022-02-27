@@ -7,6 +7,8 @@ import { message } from "../interfases/chat"
 import target from '../img/target.gif'
 import { useParams } from "react-router-dom"
 import { ChatContext } from "../context/ChatContext"
+import { io } from "socket.io-client";
+const socket = io();
 
 export const NoOpenChat = () => {
     const { clearChatHeader } = useContext(ChatContext)
@@ -41,7 +43,14 @@ export const OpenChat = () => {
         !!params.id && getChatMessages(params.id)
     }, [params.id])
 
+    useEffect(() => {
+        socket.on('hi', msg => {
+            console.log(msg)
+        })
+    }, [])
+
     const send = async () => {
+        socket.emit('chat message', 'input.value');
         inputRef.current?.blur()
         sendMessage({
             text,
