@@ -88,7 +88,7 @@ export const OpenChat = () => {
                     <SendIcon />
                 </Button>
             </div>
-            <div className="w-full flex gap-y-4 flex-col-reverse scroll px-2 flex-1" >
+            <div className="w-full flex gap-y-4 flex-col-reverse scroll px-2 flex-1 min-h-screen" >
                 {messages.map((message: message) => <MessageItem key={message._id} message={message} />)}
             </div>
         </div >

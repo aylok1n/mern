@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react"
 import { IAuthContext } from "../interfases/auth"
-import { IChat, message } from "../interfases/chat"
+import { IChat, ISendMessageBody, message } from "../interfases/chat"
 import { useFetch } from "./useFetch"
 
 export const useChat = (auth: IAuthContext) => {
@@ -38,18 +38,17 @@ export const useChat = (auth: IAuthContext) => {
         setChatwith(null)
     }, [])
 
-    const sendMessage = useCallback(async ({ text, chatId, withId }) => {
-        if (text) {
-            await request({
-                url: '/api/chat/send',
-                body: { text, chatId, withId },
-                method: "POST",
-                headers: {
-                    Authorization: `Bearer ${user ? user.token : ''}`
-                }
-            })
-        }
-    }, [user])
+    const sendMessage = async (body: ISendMessageBody) => {
+        const response = await request({
+            url: '/api/chat/send',
+            body: body,
+            method: "POST",
+            headers: {
+                Authorization: `Bearer ${user ? user.token : ''}`
+            }
+        })
+        return response
+    }
 
 
     useEffect(() => {

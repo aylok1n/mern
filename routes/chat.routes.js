@@ -58,30 +58,29 @@ router.post('/send', auth, async (req, res) => {
     try {
         const { text, chatId, withId } = req.body
 
-        const message = {
-            text,
-            senderId: req.user.userId
-        }
-
-        if (chatId) {
-            const chat = await Chat.findByIdAndUpdate(chatId.substring(1),
+        if (chatId && text) {
+            const message = {
+                text,
+                senderId: req.user.userId
+            }
+            await Chat.findByIdAndUpdate(chatId.substring(1),
                 {
                     $push: {
                         messages: message
                     }
                 }
             )
+            return res.json({ status: true, message: "сообщение доставлено" })
         }
         else if (withId) {
             const members = [req.user.userId, withId]
             const chat = new Chat({
-                members,
-                messages: [message]
+                members
             })
+            console.log(chat)
             await chat.save()
+            return res.status(201).json({ status: true, message: "сообщение доставлено", chatId: chat._id })
         }
-
-        return res.json({ status: true, message: "сообщение доставлено" })
 
     } catch (error) {
         console.error(error)

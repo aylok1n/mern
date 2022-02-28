@@ -1,9 +1,8 @@
-import { Button, Container, Drawer, IconButton, List } from "@mui/material";
+import { Container, Drawer, IconButton, List } from "@mui/material";
 import { ChatItem } from "../components/chatListItem";
 import { useContext, useState } from "react";
 import { ChatContext } from "../context/ChatContext";
 import { Outlet } from "react-router-dom";
-import { Box } from "@mui/system";
 import { Menu } from "@mui/icons-material";
 
 export const ChatsPage = () => {

@@ -13,3 +13,9 @@ export interface IChat {
     }
     lastMessage: message
 }
+
+export interface ISendMessageBody {
+    text?: string
+    chatId?: string
+    withId?: string
+}

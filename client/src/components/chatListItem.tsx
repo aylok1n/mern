@@ -6,6 +6,7 @@ import { Link, useParams } from "react-router-dom";
 export const ChatItem = ({ chat }: { chat: IChat }) => {
     const selected = useParams()?.id?.substring(1) === chat.chatId
     const getDate = () => {
+        if (!chat?.lastMessage?.date) return ''
         const date = new Date(chat.lastMessage.date)
         const today = new Date()
         if (date.toDateString() === today.toDateString()) return date.toTimeString().split(' ')[0]
@@ -37,7 +38,7 @@ export const ChatItem = ({ chat }: { chat: IChat }) => {
                                 </div>
                                 <div className="overflow-hidden text-ellipsis w-9/12 ">
                                     <span className="whitespace-nowrap  overflow-hidden text-ellipsis   mr-2">
-                                        {chat.lastMessage.text}
+                                        {chat?.lastMessage?.text}
                                     </span>
                                 </div>
                             </div>
