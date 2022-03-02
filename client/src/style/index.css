@@ -19,7 +19,7 @@ p {
 }
 
 .main-view {
-    @apply flex items-center flex-col overflow-hidden h-screen;
+    @apply flex items-center flex-col overflow-hidden h-screen bg-gray-200;
     overflow: hidden;
     padding-top: 64px;
 }

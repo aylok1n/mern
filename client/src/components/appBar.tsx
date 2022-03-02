@@ -127,14 +127,14 @@ export default function PrimarySearchAppBar() {
   </Menu>
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar className='flex items-center' >
+    <div>
+      <header className='flex items-center  fixed w-full z-30' style={{ backgroundColor: '#262626' }}>
         <Toolbar className='w-full max-w-screen-xl'>
           <Typography
             variant="h6"
             noWrap
             component="div"
-            sx={{ display: { xs: 'none', sm: 'block' } }}
+            sx={{ display: { xs: 'none', sm: 'block', color: '#fff4f9' } }}
           >
             Odnogryppniki
           </Typography>
@@ -142,7 +142,7 @@ export default function PrimarySearchAppBar() {
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             <Link to="/chat">
-              <IconButton size="large" color="inherit">
+              <IconButton size="large" color="primary">
                 <Badge badgeContent={'❤'} color="error">
                   <MailIcon />
                 </Badge>
@@ -155,7 +155,7 @@ export default function PrimarySearchAppBar() {
               aria-controls={'primary-search-account-menu'}
               aria-haspopup="true"
               onClick={handleProfileMenuOpen}
-              color="inherit"
+              color="primary"
             >
               <AccountCircle />
             </IconButton>
@@ -167,13 +167,13 @@ export default function PrimarySearchAppBar() {
               aria-controls={'primary-search-account-menu-mobile'}
               aria-haspopup="true"
               onClick={handleMobileMenuOpen}
-              color="inherit"
+              color="primary"
             >
               <MoreIcon />
             </IconButton>
           </Box>
         </Toolbar>
-      </AppBar>
+      </header>
       {renderMobileMenu}
       {renderMenu}
       <Modal
@@ -203,6 +203,6 @@ export default function PrimarySearchAppBar() {
           </div>
         </Box>
       </Modal>
-    </Box>
+    </div>
   );
 }

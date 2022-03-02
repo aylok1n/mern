@@ -84,10 +84,11 @@ export const SeachInput = (props: any) => {
                 renderInput={(params) => (
                     <TextField
                         {...params}
+                        size="small"
                         placeholder="Найди того самого"
                         InputProps={{
                             ...params.InputProps,
-                            sx: { color: 'white' }
+                            sx: { color: 'white', py: 0 }
                         }}
 
                         sx={{ color: 'white' }}
