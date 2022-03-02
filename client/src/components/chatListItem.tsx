@@ -14,37 +14,24 @@ export const ChatItem = ({ chat }: { chat: IChat }) => {
     }
 
     return (
-        <Link to={`:${chat.chatId}`} className='relative w-full rounded-sm mr-5'>
+        <Link to={`:${chat.chatId}`} className='rounded-sm mr-5'>
             <ListItem>
-                <ListItemButton selected={selected} >
-                    <div className="flex flex-col flex-1">
-                        <div className="flex flex-row items-start flex-1">
-                            <ListItemIcon sx={{ width: '3rem', height: '3rem' }}>
-                                <AccountCircle sx={{ width: '100%', height: '100%' }} />
-                            </ListItemIcon>
-                            <div className="flex flex-1 flex-col overflow-hidden">
-                                <div className="flex flex-row items-center max-w-full">
-                                    <span className="font-semibold">{chat.chatWith.name}</span>
-                                    <div className="flex absolute right-0 transform -translate-x-full mr-6">
-                                        <Typography
-                                            variant={'body2'}
-                                            component={'span'}
-                                            align={'right'}
-                                            sx={{ width: '100%' }}
-                                        >
-                                            {getDate()}
-                                        </Typography>
-                                    </div>
-                                </div>
-                                <div className="overflow-hidden text-ellipsis w-9/12 ">
-                                    <span className="whitespace-nowrap  overflow-hidden text-ellipsis   mr-2">
-                                        {chat?.lastMessage?.text}
-                                    </span>
-                                </div>
+                <div className="flex justify-between items-center bg-blue-200 p-2 hover:shadow-lg rounded cursor-pointer transition">
+                    <div className="flex">
+                        <div className="w-12 h-12">
+                            <AccountCircle sx={{ width: '100%', height: '100%' }} />
+                        </div>
+                        <div className="flex flex-col">
+                            <div className="flex flex-row items-center">
+                                <span className="text-black mr-4 font-semibold">{chat.chatWith.name}</span>
+                                <span className="text-black-300 text-sm ">{getDate()}</span>
                             </div>
+                            <span className="text-sm text-gray-400 truncate w-36">
+                                {chat?.lastMessage?.text}
+                            </span>
                         </div>
                     </div>
-                </ListItemButton>
+                </div>
             </ListItem >
         </Link>
     )
