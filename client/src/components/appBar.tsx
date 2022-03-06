@@ -128,8 +128,8 @@ export default function PrimarySearchAppBar() {
 
   return (
     <div>
-      <header className='flex items-center  fixed w-full z-30' style={{ backgroundColor: '#262626' }}>
-        <Toolbar className='w-full max-w-screen-xl mx-auto'>
+      <header className='flex items-center justify-center fixed w-full z-30' style={{ backgroundColor: '#262626' }}>
+        <Toolbar className='w-full max-w-screen-xl'>
           <Typography
             variant="h6"
             noWrap

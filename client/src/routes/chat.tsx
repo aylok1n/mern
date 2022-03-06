@@ -66,7 +66,10 @@ export const OpenChat = () => {
 
     return (
         <div className="w-full flex flex-col-reverse" >
-            <div className="flex-row w-full flex justify-center items-end px-2 mt-5" >
+            <div 
+            className="flex-row w-full flex justify-center items-end px-8 py-3 z-40" 
+            style={{boxShadow: '0px -8px 20px -5px rgba(34, 60, 80, 0.2)'}}
+            >
                 <TextField
                     inputRef={inputRef}
                     onChange={changeTextHandler}
@@ -88,7 +91,7 @@ export const OpenChat = () => {
                     <SendIcon />
                 </Button>
             </div>
-            <div className="w-full flex gap-y-4 flex-col-reverse scroll px-2 flex-1 min-h-screen" >
+            <div className="w-full flex gap-y-4 flex-col-reverse scroll px-6 flex-1 min-h-screen" >
                 {messages.map((message: message) => <MessageItem key={message._id} message={message} />)}
             </div>
         </div >
