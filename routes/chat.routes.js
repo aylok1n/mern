@@ -35,7 +35,7 @@ router.get('/:id', auth, async (req, res) => {
         const chat = await Chat.findById(req.params.id.substring(1)).select('messages members')
 
         if (chat) {
-            const memberId = chat.members.find(memberId => memberId.toString() !== req.params.id)
+            const memberId = chat.members.find(memberId => memberId.toString() !== req.user.userId)
             if (memberId) {
                 const member = await User.findById(memberId).select('_id name')
                 if (member) {
@@ -58,11 +58,14 @@ router.post('/send', auth, async (req, res) => {
     try {
         const { text, chatId, withId } = req.body
 
-        if (chatId && text) {
-            const message = {
-                text,
-                senderId: req.user.userId
-            }
+        console.log(text, chatId, withId)
+
+        const message = {
+            text: text || `"отправитель еблан не указал текст сообщения"`,
+            senderId: req.user.userId
+        }
+
+        if (chatId) {
             await Chat.findByIdAndUpdate(chatId.substring(1),
                 {
                     $push: {
@@ -72,13 +75,29 @@ router.post('/send', auth, async (req, res) => {
             )
             return res.json({ status: true, message: "сообщение доставлено" })
         }
+
         else if (withId) {
             const members = [req.user.userId, withId]
-            const chat = new Chat({
-                members
+
+            const chat = await Chat.find({
+                $or: [
+                    {
+                        members: members
+                    },
+                    {
+                        members: members.reverse()
+                    }
+                ]
             })
-            console.log(chat)
-            await chat.save()
+
+            if (!!chat) {
+                const chat = new Chat({
+                    members,
+                    messages: [message]
+                })
+                await chat.save()
+            }
+
             return res.status(201).json({ status: true, message: "сообщение доставлено", chatId: chat._id })
         }
 

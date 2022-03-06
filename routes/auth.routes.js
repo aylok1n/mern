@@ -88,7 +88,7 @@ router.post(
             const userData = {
                 id: user._id,
                 name: user.name,
-                image: user?.image || '',
+                image: user.image,
                 email: user.email,
                 token
             }
