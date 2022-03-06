@@ -17,14 +17,14 @@ export const ChatItem = ({ chat }: { chat: IChat }) => {
         <Link to={`:${chat.chatId}`} className='rounded-sm'>
             <ListItem sx={{py: 0.5}}>
                 <div className="flex justify-between items-center bg-blue-100 p-2 shadow-lg rounded cursor-pointer transition hover:bg-stone-100">
-                    <div className="flex">
+                    <div className="flex relative">
+                    <span className="text-black-300 text-sm absolute right-0 top-1">{getDate()}</span>
                         <div className="w-12 h-12">
                             <AccountCircle sx={{ width: '100%', height: '100%' }} />
                         </div>
                         <div className="flex flex-col">
                             <div className="flex flex-row items-center">
                                 <span className="text-black mr-20 font-semibold">{chat.chatWith.name}</span>
-                                <span className="text-black-300 text-sm ">{getDate()}</span>
                             </div>
                             <span className="text-sm text-gray-400 truncate w-48">
                                 {chat?.lastMessage?.text}
