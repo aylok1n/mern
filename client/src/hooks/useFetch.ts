@@ -13,7 +13,10 @@ export const useFetch = () => {
             const response = await fetch(url, {
                 method: method || 'GET',
                 body: body ? JSON.stringify(body) : null,
-                headers: headers
+                headers: {
+                    'my-custom-header': 'abcd',
+                    ...headers
+                }
             })
             const data = await response.json()
             if (!response.ok) throw new Error(data?.message || 'useFetch error')

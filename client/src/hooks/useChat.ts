@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from "react"
+import { io, Socket } from "socket.io-client"
 import { IAuthContext } from "../interfases/auth"
 import { IChat, ISendMessageBody, message } from "../interfases/chat"
 import { useFetch } from "./useFetch"
@@ -7,6 +8,7 @@ export const useChat = (auth: IAuthContext) => {
     const [chats, setChats] = useState<IChat[]>([])
     const [messages, setMessages] = useState<message[]>([])
     const [chatWith, setChatwith] = useState<IChat['chatWith'] | null>(null)
+    const [socket, setSocket] = useState<Socket | null>(null)
 
     const { request } = useFetch()
     const { ready, user, isAuthenticated } = auth
@@ -50,10 +52,19 @@ export const useChat = (auth: IAuthContext) => {
         return response
     }
 
-
     useEffect(() => {
-        if (ready && isAuthenticated) getChats()
-    }, [ready, isAuthenticated])
+        if (ready && isAuthenticated) {
+            getChats()
+            socket?.close()
+            setSocket(io('http://localhost:5000', {
+                query: { token: user?.token },
+                withCredentials: true,
+                extraHeaders: {
+                    "my-custom-header": "abcd"
+                }
+            }))
+        }
+    }, [ready, isAuthenticated, user])
 
-    return { chats, getChats, sendMessage, messages, getChatMessages, chatWith, clearChatHeader }
+    return { chats, getChats, sendMessage, messages, getChatMessages, chatWith, clearChatHeader, socket }
 }

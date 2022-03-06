@@ -7,8 +7,6 @@ import { message } from "../interfases/chat"
 import target from '../img/target.gif'
 import { useParams } from "react-router-dom"
 import { ChatContext } from "../context/ChatContext"
-import { io } from "socket.io-client";
-const socket = io();
 
 export const NoOpenChat = () => {
     const { clearChatHeader } = useContext(ChatContext)
@@ -32,7 +30,7 @@ export const OpenChat = () => {
 
     const params = useParams()
     const { loader } = useFetch()
-    const { sendMessage, messages, getChatMessages } = useContext(ChatContext)
+    const { sendMessage, messages, getChatMessages, socket } = useContext(ChatContext)
     const inputRef = useRef<HTMLInputElement | null>(null)
 
     const changeTextHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -44,13 +42,13 @@ export const OpenChat = () => {
     }, [params.id])
 
     useEffect(() => {
-        socket.on('hi', msg => {
+        socket?.on('hi', msg => {
             console.log(msg)
         })
     }, [])
 
     const send = async () => {
-        socket.emit('chat message', 'input.value');
+        socket?.emit('chat message', 'input.value');
         inputRef.current?.blur()
         sendMessage({
             text,
@@ -66,9 +64,9 @@ export const OpenChat = () => {
 
     return (
         <div className="w-full flex flex-col-reverse" >
-            <div 
-            className="flex-row w-full flex justify-center items-end px-8 py-3 z-40" 
-            style={{boxShadow: '0px -8px 20px -5px rgba(34, 60, 80, 0.2)'}}
+            <div
+                className="flex-row w-full flex justify-center items-end px-8 py-3 z-40"
+                style={{ boxShadow: '0px -8px 20px -5px rgba(34, 60, 80, 0.2)' }}
             >
                 <TextField
                     inputRef={inputRef}

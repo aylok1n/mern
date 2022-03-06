@@ -13,7 +13,7 @@ router.get('/', auth, async (req, res) => {
 
         const response = await Promise.all(chats.map(async chat => {
             const userId = chat.members.find(member => req.user.userId !== member.toString()).toString()
-            const member = await User.findById(userId).select('name image')
+            const member = await User.findById(userId).select('_id name isOnline lastSeen image')
             return {
                 chatId: chat._id,
                 chatWith: member,
@@ -37,7 +37,7 @@ router.get('/:id', auth, async (req, res) => {
         if (chat) {
             const memberId = chat.members.find(memberId => memberId.toString() !== req.user.userId)
             if (memberId) {
-                const member = await User.findById(memberId).select('_id name')
+                const member = await User.findById(memberId).select('_id name isOnline lastSeen image')
                 if (member) {
                     return res.json({
                         messages: chat.messages.reverse(),
