@@ -15,10 +15,17 @@ export const ChatItem = ({ chat }: { chat: IChat }) => {
 
     return (
         <Link to={`:${chat.chatId}`} className='rounded-sm'>
-            <ListItem sx={{py: 0.5}}>
-                <div className="flex justify-between items-center bg-blue-100 p-2 shadow-lg rounded cursor-pointer transition hover:bg-stone-100">
-                    <div className="flex relative">
-                    <span className="text-black-300 text-sm absolute right-0 top-1">{getDate()}</span>
+            <ListItem sx={{ py: 0.5 }}>
+                <div className={`flex justify-between relative overflow-hidden bg-blue-100 p-2 items-center shadow-lg rounded cursor-pointer transition hover:bg-stone-100`}>
+                    {selected &&
+                        <div
+                            className="h-full absolute left-0 w-1 bg-emerald-500 z-50"
+                            style={{ boxShadow: '10px 0px 7px -5px rgba(0, 182, 13, 0.4)' }}
+                        >
+                        </div>
+                    }
+                    <div className="flex relative z-20">
+                        <span className="text-black-300 text-sm absolute right-0 top-1">{getDate()}</span>
                         <div className="w-12 h-12">
                             <AccountCircle sx={{ width: '100%', height: '100%' }} />
                         </div>
