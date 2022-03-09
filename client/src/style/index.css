@@ -62,3 +62,18 @@ p {
     border-radius: 40px;
 	background-color: rgba(0,0,0,0.4);
 }
+.meetCard {
+    width: 15rem;
+    min-height: 22rem;
+    border-radius: 2rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    color: white;
+    padding: 1rem;
+}
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}

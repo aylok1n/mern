@@ -7,6 +7,7 @@ import { ChatContext } from '../context/ChatContext'
 import { useChat } from '../hooks/useChat'
 import { IAuthContext } from '../interfases/auth'
 import { NoOpenChat, OpenChat } from './chat'
+import { Meets } from './meets'
 
 const Layout = () => {
     return (
@@ -27,12 +28,13 @@ export const useRoutes = (auth: IAuthContext) => {
                 <Router>
                     <Routes>
                         <Route path="/" element={<Layout />}>
-                            <Route index element={<Navigate to="/chat" />} />
+                            <Route index element={<Navigate to="/meets" />} />
                             <Route path="/chat" element={<ChatsPage />}>
                                 <Route index element={<NoOpenChat />} />
                                 <Route path=":id" element={<OpenChat />} />
                             </Route>
                             <Route path="profile" element={<ProfilePage />} />
+                            <Route path="meets" element={<Meets />} />
                         </Route>
                         <Route path='*' element={<Navigate to="/" />} />
                     </Routes>
