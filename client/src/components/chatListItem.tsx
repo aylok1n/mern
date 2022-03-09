@@ -31,7 +31,7 @@ export const ChatItem = ({ chat }: { chat: IChat }) => {
                         </div>
                         <div className="flex flex-col">
                             <div className="flex flex-row items-center">
-                                <span className="text-black mr-20 font-semibold">{chat.chatWith.name}</span>
+                                <span className="text-black mr-20 font-semibold">{chat.chatWith?.name}</span>
                             </div>
                             <span className="text-sm text-gray-400 truncate w-48">
                                 {chat?.lastMessage?.text}
