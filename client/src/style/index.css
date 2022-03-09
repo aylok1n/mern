@@ -88,3 +88,9 @@ h1 {
     font-size: 2rem;
     font-weight: 600;
 }
+.pref {
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}

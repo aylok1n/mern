@@ -33,6 +33,7 @@ export const Meets = () => {
                         desc={e.desc}
                         userImg={e.userImg}
                         key={i}
+                        maxDistance={150}
                     />
                 ))}
             </div>
