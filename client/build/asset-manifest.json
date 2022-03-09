@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.7f1c71c2.css",
-    "main.js": "/static/js/main.5f123fd0.js",
+    "main.css": "/static/css/main.0bd710a6.css",
+    "main.js": "/static/js/main.6f9afee7.js",
     "static/media/target.gif": "/static/media/target.1bc4e34f791df26703cb.gif",
     "static/media/MullerLight.ttf": "/static/media/MullerLight.351fcd30b12606e1a5de.ttf",
     "index.html": "/index.html",
-    "main.7f1c71c2.css.map": "/static/css/main.7f1c71c2.css.map",
-    "main.5f123fd0.js.map": "/static/js/main.5f123fd0.js.map"
+    "main.0bd710a6.css.map": "/static/css/main.0bd710a6.css.map",
+    "main.6f9afee7.js.map": "/static/js/main.6f9afee7.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f1c71c2.css",
-    "static/js/main.5f123fd0.js"
+    "static/css/main.0bd710a6.css",
+    "static/js/main.6f9afee7.js"
   ]
 }
