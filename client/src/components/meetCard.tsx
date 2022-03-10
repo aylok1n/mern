@@ -11,20 +11,23 @@ export const MeetCard = (props: any) => {
         x: 0,
         y: 0
     })
+    const [currentCard, setCurrentCard] = React.useState(false)
 
     const cardMove = (e: any) => {
         setCardPos({
             x: e.pageX - startPos.x,
             y: e.pageY - startPos.y
         })
+        Math.abs(e.pageX - startPos.x) >= maxDistance ? setCurrentCard(true) : setCurrentCard(false)
     }
 
     const getStartPositions = (e: any) => {
         setTouchable(false)
+        setCurrentCard(false)
         setCardPos({
-            x:0,
-            y:0
-        })
+            x: 0,
+            y: 0
+        })  
     }
 
     return (
@@ -36,17 +39,15 @@ export const MeetCard = (props: any) => {
             onMouseDown={e => {
                 setStartPos({ x: e.pageX, y: e.pageY })
                 setTouchable(true)
-                
             }}
             onMouseOut={getStartPositions}
             onMouseUp={getStartPositions}
-            className={`relative ${touchable ? "z-50" : "transition-all"}`}>
+            className={`relative pref ${touchable ? "z-50" : "transition-all"}`}>
+            {currentCard && <p className="absolute blink text-green top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 border-dashed border-green border-4 p-2">Выбрать</p>}
             <div
-                style={{
-                    backgroundImage: 'url(' + props.userImg + ')'
-                }}
+                style={{ backgroundImage: 'url(' + props.userImg + ')' }}
                 className="meetCard flex items-end">
-                <div className="z-10 pref">
+                <div className="z-10">
                     <p className="capitalize">{props.name}</p>
                     <h3>{props.desc}</h3>
                 </div>

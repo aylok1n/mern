@@ -8,7 +8,7 @@ export const MessageItem = ({ message }: { message: message }) => {
 
     if (self) return (
         <div className="w-full flex justify-end">
-            <div className="flex items-center justify-center rounded-2xl bg-slate-100 h-16 w-52 max-w-2xl" >
+            <div className="flex items-center justify-center rounded-2xl bg-slate-100 p-4 w-52 max-w-2xl" >
                 {message.text}
             </div>
         </div>
