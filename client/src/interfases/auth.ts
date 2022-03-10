@@ -3,7 +3,8 @@ export interface IUserData {
     name: string
     image: string
     email: string,
-    token: string
+    token: string,
+    desc: string
 }
 
 export interface IAuthContext {

@@ -1,28 +1,27 @@
 import { Container, List, ListItem, ListItemButton, ListItemText } from "@mui/material"
+import MeetCard from "../components/meetCard";
+import { useAuth } from "../hooks/useAuth";
 
 export const ProfilePage = () => {
+  const auth = useAuth()
+  const currentUser = auth.user
+
   return (
     <Container maxWidth="lg" >
       <div className="flex flex-row flex-1 p-4">
-        <div className="flex flex-col w-40 bg-slate-200 rounded-lg overflow-hidden">
-          <div className="h-40">
-            <img className="w-full" src="https://avatars.githubusercontent.com/u/61543608?v=4" />
-          </div>
-          <List className="w-full flex flex-1 flex-col" disablePadding>
-            <ListItem disablePadding>
-              <ListItemButton>
-                <ListItemText primary="Edit name" />
-              </ListItemButton>
-            </ListItem>
-            <ListItem disablePadding>
-              <ListItemButton>
-                <ListItemText primary="Settings" />
-              </ListItemButton>
-            </ListItem>
-          </List>
-        </div>
+        <MeetCard
+          userImg={currentUser?.image}
+          name={currentUser?.name}
+          desc={currentUser?.desc}
+        />
         <div className="pl-4">
-          <span className="text-2xl font-semibold">User VeryVeryLongName</span>
+          <div className="pb-4">
+            <span className="text-2xl font-semibold capitalize">{currentUser?.name}</span>
+            <p>{currentUser?.desc}</p>
+          </div>
+          <div>
+            <h3>Ваш E-mail: {currentUser?.email}</h3>
+          </div>
         </div>
       </div>
     </Container>

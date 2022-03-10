@@ -42,7 +42,7 @@ export const MeetCard = (props: any) => {
                 }}
                 className="meetCard flex items-end">
                 <div className="z-10 pref">
-                    <p>{props.name}</p>
+                    <p className="capitalize">{props.name}</p>
                     <h3>{props.desc}</h3>
                 </div>
             </div>

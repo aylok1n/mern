@@ -129,7 +129,7 @@ export default function PrimarySearchAppBar() {
   return (
     <div>
       <header className='flex items-center justify-center fixed w-full z-30' style={{ backgroundColor: '#262626' }}>
-        <Toolbar className='w-full max-w-screen-xl'>
+        <Toolbar sx={{ justifyContent: 'space-between' }} className='w-full max-w-screen-xl'>
           <Typography
             variant="h6"
             noWrap
@@ -138,8 +138,14 @@ export default function PrimarySearchAppBar() {
           >
             Odnogryppniki
           </Typography>
-          <SeachInput />
-          <Box sx={{ flexGrow: 1 }} />
+          <Box sx={{display: 'flex'}}>
+            {/* <SeachInput /> */}
+            <Link to="/meets">
+              <Button sx={{ color: 'black' }} variant="contained">
+                Искать пару
+              </Button>
+            </Link>
+          </Box>
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             <Link to="/chat">
               <IconButton size="large" color="primary">

@@ -3,6 +3,7 @@ const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
 const { check, validationResult } = require('express-validator')
 const User = require('../models/User')
+const authMiddleware = require('../middleware/auth.middleware')
 const router = Router()
 
 require('node-env-file')('.env')
@@ -90,7 +91,8 @@ router.post(
                 name: user.name,
                 image: user.image,
                 email: user.email,
-                token
+                token,
+                desc: user.desc || 'я молчун',
             }
 
             res.json({ userData })
@@ -99,6 +101,5 @@ router.post(
             res.status(500).json({ message: 'Что-то пошло не так, попробуйте снова' })
         }
     })
-
 
 module.exports = router
