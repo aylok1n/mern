@@ -129,7 +129,7 @@ export default function PrimarySearchAppBar() {
   return (
     <div>
       <header className='flex items-center justify-center fixed w-full z-30' style={{ backgroundColor: '#262626' }}>
-        <Toolbar sx={{ justifyContent: 'space-around' }} className='w-full max-w-screen-xl'>
+        <Toolbar sx={{ justifyContent: 'space-between' }} className='w-full max-w-screen-xl'>
           <Typography
             variant="h6"
             noWrap
