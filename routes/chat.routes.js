@@ -12,7 +12,7 @@ router.get('/', auth, async (req, res) => {
         if (!chats) return res.json({ chats: [] })
 
         const response = await Promise.all(chats.map(async chat => {
-            const userId = chat.members.find(member => req.user.userId !== member.toString()).toString()
+            const userId = chat.members.find(member => req.user.userId !== member.toString())?.toString()
             const member = await User.findById(userId).select('_id name isOnline lastSeen image')
             return {
                 chatId: chat._id,
