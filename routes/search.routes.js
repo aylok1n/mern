@@ -14,4 +14,25 @@ router.get('/users', auth, async (req, res) => {
     }
 })
 
+router.get('/meets', auth, async (req, res) => {
+    try {
+        const users = await User.aggregate(
+            [
+                { '$sample': { 'size': 2 } },
+                {
+                    '$group': {
+                        '_id': "$_id",
+                        'name': { '$first': "$name" },
+                        'image': { '$first': "$image" },
+                    }
+                }
+            ]
+        )
+        return res.json({ users })
+    } catch (error) {
+        console.error(error)
+        res.status(500).json({ message: 'Что-то пошло не так, попробуйте снова' })
+    }
+})
+
 module.exports = router

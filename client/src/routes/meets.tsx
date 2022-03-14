@@ -1,32 +1,40 @@
 import { Button, styled } from "@mui/material"
+import { useContext, useEffect, useState } from "react"
 import MeetCard from "../components/meetCard"
+import { AuthContext } from "../context/AuthContext"
+import { useFetch } from "../hooks/useFetch"
+
+interface RandomUser {
+    _id: string,
+    name: string,
+    image: string
+}
 
 export const Meets = () => {
-    const users = [
-        {
-            name: "Юля Кандакова",
-            desc: "Вот бы мальчишку...",
-            userImg: "https://n1s1.starhit.ru/88/e1/69/88e169bf202b3e6bc7f9dd411b70f7c4/368x460_0_cee6389f5412c30ed5384e92235a9f6e@1080x1350_0xac120003_19503755701636307290.jpg",
-        },
-        {
-            name: "Катя Самбука",
-            desc: "Люблю гулять под звездами, смотреть на небо и мечтать о будущем",
-            userImg: "https://sun9-56.userapi.com/impg/upIrCCHumupX-1K67o8Q6d9GSqhoN2f8Q5wklQ/PHRkj7YJKSo.jpg?size=1202x1600&quality=96&sign=a41ff61a3a478f5c5ec012b8963ace27&type=album",
-        },
-    ]
+    const { request } = useFetch()
+    const [randomUsers, setRandomUsers] = useState<RandomUser[]>([])
+    const auth = useContext(AuthContext)
     const Btn = styled(Button)({
         borderColor: '#000000',
         color: '#000000'
     })
+    useEffect(() => {
+        request({
+            url: 'api/search/meets',
+            headers: {
+                Authorization: `Bearer ${auth.user ? auth.user.token : ''}`
+            }
+        }).then(res => setRandomUsers(res.users))
+    }, [])
     return (
         <>
             <h1 className="pt-3 text-center">Выбирай девушку, которая тебе симпатична</h1>
             <div className="py-14 flex flex-wrap gap-5">
-                {users.map((e, i) => (
+                {randomUsers.map((e:any, i:number) => (
                     <MeetCard
-                        name={e.name}
-                        desc={e.desc}
-                        userImg={e.userImg}
+                        name={e?.name}
+                        desc={e?.desc}
+                        userImg={e?.image}
                         key={i}
                     />
                 ))}
