@@ -33,7 +33,8 @@ export const MeetCard = (props: any) => {
     return (
         <div
             style={{
-                transform: 'translate(' + cardPos.x + 'px ,' + cardPos.y + 'px) rotate(' + cardPos.x / (maxDistance / 30) + 'deg)'
+                transform: 'translate(' + cardPos.x + 'px ,' + cardPos.y + 'px) rotate(' + cardPos.x / (maxDistance / 30) + 'deg)',
+                opacity: 1 - (Math.abs(cardPos.x / window.innerWidth))
             }}
             onMouseMove={e => touchable && cardMove(e)}
             onMouseDown={e => {
@@ -43,10 +44,9 @@ export const MeetCard = (props: any) => {
             onMouseOut={getStartPositions}
             onMouseUp={e => {
                 getStartPositions(e)
-                currentCard && props.chooseCard()
+                currentCard && props.chooseCard && props.chooseCard()
             }}
-            className={`relative pref ${touchable ? "z-50" : "transition-all"}`}>
-            {currentCard && <p className="absolute blink text-green top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 border-dashed border-green border-4 p-2">Выбрать</p>}
+            className={`relative pref ${touchable ? "z-50" : "z-10"}`}>
             <div
                 style={{ backgroundImage: 'url(' + props.userImg + ')' }}
                 className="meetCard flex items-end">

@@ -94,11 +94,3 @@ h1 {
     -khtml-user-select: none;
     -webkit-user-select: none;
 }
-.blink {
-    animation: blink 1s linear infinite;
-}
-@keyframes blink {
-    50% {
-      opacity: 0;
-    }
-}
