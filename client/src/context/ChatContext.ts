@@ -10,7 +10,7 @@ interface IChatContext {
     getChatMessages: (chatId: string) => void
     chatWith: IChat['chatWith'] | null
     clearChatHeader: () => void,
-    socket: Socket | null
+    socket: null
 }
 
 export const ChatContext = createContext<IChatContext>({

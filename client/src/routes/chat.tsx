@@ -30,7 +30,7 @@ export const OpenChat = () => {
 
     const params = useParams()
     const { loader } = useFetch()
-    const { sendMessage, messages, getChatMessages, socket } = useContext(ChatContext)
+    const { sendMessage, messages, getChatMessages } = useContext(ChatContext)
     const inputRef = useRef<HTMLInputElement | null>(null)
 
     const changeTextHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -41,14 +41,7 @@ export const OpenChat = () => {
         !!params.id && getChatMessages(params.id)
     }, [params.id])
 
-    useEffect(() => {
-        socket?.on('hi', msg => {
-            console.log(msg)
-        })
-    }, [])
-
     const send = async () => {
-        socket?.emit('chat message', 'input.value');
         inputRef.current?.blur()
         sendMessage({
             text,
