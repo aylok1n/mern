@@ -18,24 +18,28 @@ export const Meets = () => {
         borderColor: '#000000',
         color: '#000000'
     })
-    useEffect(() => {
+    const getMeets = () => {
         request({
             url: 'api/search/meets',
             headers: {
                 Authorization: `Bearer ${auth.user ? auth.user.token : ''}`
             }
         }).then(res => setRandomUsers(res.users))
+    }
+    useEffect(() => {
+        getMeets()
     }, [])
     return (
         <>
             <h1 className="pt-3 text-center">Выбирай девушку, которая тебе симпатична</h1>
             <div className="py-14 flex flex-wrap gap-5">
-                {randomUsers.map((e:any, i:number) => (
+                {randomUsers.map((e: any, i: number) => (
                     <MeetCard
                         name={e?.name}
                         desc={e?.desc}
                         userImg={e?.image}
                         key={i}
+                        chooseCard={getMeets}
                     />
                 ))}
             </div>

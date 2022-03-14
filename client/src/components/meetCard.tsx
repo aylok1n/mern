@@ -41,7 +41,10 @@ export const MeetCard = (props: any) => {
                 setTouchable(true)
             }}
             onMouseOut={getStartPositions}
-            onMouseUp={getStartPositions}
+            onMouseUp={e => {
+                getStartPositions(e)
+                currentCard && props.chooseCard()
+            }}
             className={`relative pref ${touchable ? "z-50" : "transition-all"}`}>
             {currentCard && <p className="absolute blink text-green top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 border-dashed border-green border-4 p-2">Выбрать</p>}
             <div
