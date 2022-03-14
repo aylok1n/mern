@@ -1,5 +1,4 @@
 import { useCallback, useEffect, useState } from "react"
-// import { io, Socket } from "socket.io-client"
 import { IAuthContext } from "../interfases/auth"
 import { IChat, ISendMessageBody, message } from "../interfases/chat"
 import { useFetch } from "./useFetch"
@@ -8,7 +7,6 @@ export const useChat = (auth: IAuthContext) => {
     const [chats, setChats] = useState<IChat[]>([])
     const [messages, setMessages] = useState<message[]>([])
     const [chatWith, setChatwith] = useState<IChat['chatWith'] | null>(null)
-    const [socket, setSocket] = useState< null>(null)
 
     const { request } = useFetch()
     const { ready, user, isAuthenticated } = auth
@@ -58,5 +56,5 @@ export const useChat = (auth: IAuthContext) => {
         }
     }, [ready, isAuthenticated, user])
 
-    return { chats, getChats, sendMessage, messages, getChatMessages, chatWith, clearChatHeader, socket }
+    return { chats, getChats, sendMessage, messages, getChatMessages, chatWith, clearChatHeader }
 }

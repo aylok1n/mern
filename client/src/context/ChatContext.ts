@@ -1,5 +1,4 @@
 import { createContext } from "react";
-import { Socket } from "socket.io-client";
 import { IChat, ISendMessageBody, message } from "../interfases/chat";
 
 interface IChatContext {
@@ -10,7 +9,6 @@ interface IChatContext {
     getChatMessages: (chatId: string) => void
     chatWith: IChat['chatWith'] | null
     clearChatHeader: () => void,
-    socket: null
 }
 
 export const ChatContext = createContext<IChatContext>({
@@ -20,6 +18,5 @@ export const ChatContext = createContext<IChatContext>({
     messages: [],
     getChatMessages: (chatId) => { },
     chatWith: null,
-    clearChatHeader: () => { },
-    socket: null
+    clearChatHeader: () => { }
 })

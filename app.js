@@ -1,6 +1,5 @@
 const express = require('express')
 const mongoose = require('mongoose')
-const bodyParser = require('body-parser')
 const path = require('path')
 
 require('node-env-file')('.env')
@@ -9,14 +8,10 @@ const { PORT, PRODUCTION, MONGOURI } = process.env
 const app = express()
 const cors = require('cors')
 app.use(express.json({ extended: true }))
-app.use(bodyParser.urlencoded({
-    extended: true
-}));
-app.use(bodyParser.json());
 
-app.use(function(req, res, next) {
-    res.header("Content-Type", 'application/json');
-    res.header("Access-Control-Allow-Origin", "*");
+app.use(function (req, res, next) {
+    req.header("Content-Type", 'application/json');
+    req.header("Access-Control-Allow-Origin", "*");
     next();
 });
 
