@@ -34,7 +34,7 @@ export const Meets = () => {
 
     return (
         <>
-            <h1 className="pt-3 text-center">Выбирай девушку, которая тебе симпатична</h1>
+            <h1 className="pt-3 text-center">Твой выбор:</h1>
             <div className="py-14 flex flex-wrap gap-5">
                 {randomUsers?.map((e: any, i: number) => (
                     <div
@@ -63,7 +63,7 @@ export const Meets = () => {
                     </div>
                 ))}
             </div>
-            <Btn onClick={getMeets} variant="outlined">Не нравится ни одна</Btn>
+            <Btn disabled={loader} onClick={getMeets} variant="outlined">Не нравится ни одна</Btn>
         </>
     )
 }
