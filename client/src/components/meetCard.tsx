@@ -2,6 +2,7 @@ import React from "react"
 
 export const MeetCard = (props: any) => {
     const maxDistance = props.maxDistance || 150
+    const noTouch = props.noTouch || false
     const [startPos, setStartPos] = React.useState({
         x: 0,
         y: 0
@@ -27,35 +28,48 @@ export const MeetCard = (props: any) => {
         setCardPos({
             x: 0,
             y: 0
-        })  
+        })
     }
-
+    
     return (
-        <div
-            style={{
-                transform: 'translate(' + cardPos.x + 'px ,' + cardPos.y + 'px) rotate(' + cardPos.x / (maxDistance / 30) + 'deg)',
-                opacity: 1 - (Math.abs(cardPos.x / window.innerWidth))
-            }}
-            onMouseMove={e => touchable && cardMove(e)}
-            onMouseDown={e => {
-                setStartPos({ x: e.pageX, y: e.pageY })
-                setTouchable(true)
-            }}
-            onMouseOut={getStartPositions}
-            onMouseUp={e => {
-                getStartPositions(e)
-                currentCard && props.chooseCard && props.chooseCard()
-            }}
-            className={`relative pref ${touchable ? "z-50" : "z-10"}`}>
+        !noTouch ? (
             <div
-                style={{ backgroundImage: 'url(' + props.userImg + ')' }}
-                className="meetCard flex items-end">
-                <div className="z-10">
-                    <p className="capitalize">{props.name}</p>
-                    <h3>{props.desc}</h3>
+                style={{
+                    transform: 'translate(' + cardPos.x + 'px ,' + cardPos.y + 'px) rotate(' + cardPos.x / (maxDistance / 30) + 'deg)',
+                    opacity: 1 - (Math.abs(cardPos.x / window.innerWidth))
+                }}
+                onMouseMove={e => touchable && cardMove(e)}
+                onMouseDown={e => {
+                    setStartPos({ x: e.pageX, y: e.pageY })
+                    setTouchable(true)
+                }}
+                onMouseOut={getStartPositions}
+                onMouseUp={e => {
+                    getStartPositions(e)
+                    currentCard && props.chooseCard && props.chooseCard()
+                }}
+                className={`relative pref ${touchable ? "z-50" : "z-10"}`}>
+                <div
+                    style={{ backgroundImage: 'url(' + props.userImg + ')' }}
+                    className="meetCard flex items-end">
+                    <div className="z-10">
+                        <p className="capitalize">{props.name}</p>
+                        <h3>{props.desc}</h3>
+                    </div>
                 </div>
             </div>
-        </div>
+        ) : (
+            <div className="relative pref">
+                <div
+                    style={{ backgroundImage: 'url(' + props.userImg + ')' }}
+                    className="meetCard flex items-end">
+                    <div className="z-10">
+                        <p className="capitalize">{props.name}</p>
+                        <h3>{props.desc}</h3>
+                    </div>
+                </div>
+            </div>
+        )
     )
 }
 

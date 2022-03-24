@@ -28,6 +28,10 @@ export const Meets = () => {
         }).then(res => setRandomUsers(res.users))
     }
 
+    const chooseOne = (id: string) => {
+        console.log(id)
+    }
+
     useEffect(() => {
         getMeets()
     }, [])
@@ -46,7 +50,10 @@ export const Meets = () => {
                                 name={e?.name}
                                 desc={e?.desc}
                                 userImg={e?.image}
-                                chooseCard={getMeets}
+                                chooseCard={() => {
+                                    chooseOne(e?._id)
+                                    getMeets()
+                                }}
                             />
                         </div>
                         <Skeleton

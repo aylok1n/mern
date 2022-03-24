@@ -13,6 +13,7 @@ export const ProfilePage = () => {
           userImg={currentUser?.image}
           name={currentUser?.name}
           desc={currentUser?.desc}
+          noTouch={true}
         />
         <div className="pl-4">
           <div className="pb-4">
