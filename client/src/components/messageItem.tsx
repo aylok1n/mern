@@ -6,20 +6,19 @@ export const MessageItem = ({ message }: { message: message }) => {
     const { user } = useContext(AuthContext)
     const self = user && user.id === message.senderId
 
-    if (self) return (
-        <div className="w-full flex justify-end">
-            <div className="flex items-center justify-center rounded-2xl bg-slate-100 p-4 w-52 max-w-2xl" >
-                {message.text}
+    const container = (type: string) => {
+        return (
+            <div className={`w-full flex ${type === 'self' ? "justify-end" : "justify-start"}`}>
+                <div className={`flex items-center justify-center rounded-2xl 
+                ${type === 'self' ? "bg-slate-100" : "bg-slate-300"}
+                p-4 max-w-2xl break-all`} >
+                    {message.text}
+                </div>
             </div>
-        </div>
-    )
+        )
+    }
 
+    if (self) return container('self')
 
-    return (
-        <div className="w-full flex justify-start">
-            <div className="flex items-center justify-center rounded-2xl bg-slate-300  h-16 w-52 max-w-2xl" >
-                {message.text}
-            </div>
-        </div>
-    )
+    return container('no-self')
 }

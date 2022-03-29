@@ -51,7 +51,7 @@ export const MeetCard = (props: any) => {
                 className={`relative pref ${touchable ? "z-50" : "z-10"}`}>
                 <div
                     style={{ backgroundImage: 'url(' + props.userImg + ')' }}
-                    className="meetCard flex items-end">
+                    className="meetCard relative flex items-end">
                     <div className="z-10">
                         <p className="capitalize">{props.name}</p>
                         <h3>{props.desc}</h3>
@@ -62,7 +62,7 @@ export const MeetCard = (props: any) => {
             <div className="relative pref">
                 <div
                     style={{ backgroundImage: 'url(' + props.userImg + ')' }}
-                    className="meetCard flex items-end">
+                    className="meetCard relative flex items-end">
                     <div className="z-10">
                         <p className="capitalize">{props.name}</p>
                         <h3>{props.desc}</h3>

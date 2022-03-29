@@ -39,7 +39,7 @@ export const Meets = () => {
     return (
         <>
             <h1 className="pt-3 text-center">Твой выбор:</h1>
-            <div className="py-14 flex flex-wrap gap-5">
+            <div className="py-14 flex flex-wrap gap-5 min-h-30rem">
                 {randomUsers?.map((e: any, i: number) => (
                     <div
                         key={i}
