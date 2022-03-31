@@ -25,13 +25,13 @@ export const ChatItem = ({ chat }: { chat: IChat }) => {
                         </div>
                     }
                     <div className="flex relative z-20">
-                        <span className="text-black-300 text-sm absolute right-0 top-1">{getDate()}</span>
+                        <span className="text-black-300 text-sm absolute right-2 top-1">{getDate()}</span>
                         <div className="w-12 h-12">
                             <AccountCircle sx={{ width: '100%', height: '100%' }} />
                         </div>
                         <div className="flex flex-col">
                             <div className="flex flex-row items-center">
-                                <span className="text-black mr-20 font-semibold">{chat.chatWith?.name}</span>
+                                <span className="text-black font-semibold">{chat.chatWith?.name}</span>
                             </div>
                             <span className="text-sm text-gray-400 truncate w-48">
                                 {chat?.lastMessage?.text}

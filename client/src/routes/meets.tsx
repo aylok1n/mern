@@ -1,6 +1,7 @@
 import { Button, CircularProgress, Skeleton, styled } from "@mui/material"
 import { useContext, useEffect, useState } from "react"
 import MeetCard from "../components/meetCard"
+import MeetCardShort from "../components/meetCardShort"
 import { AuthContext } from "../context/AuthContext"
 import { useFetch } from "../hooks/useFetch"
 
@@ -39,34 +40,45 @@ export const Meets = () => {
     return (
         <>
             <h1 className="pt-3 text-center">Твой выбор:</h1>
-            <div className="py-14 flex flex-wrap gap-5 min-h-30rem">
+            <div className="py-14 flex flex-wrap justify-center gap-5 min-h-30rem">
                 {randomUsers?.map((e: any, i: number) => (
                     <div
                         key={i}
                         className="relative"
                     >
-                        <div className={loader ? "opacity-0" : ""}>
-                            <MeetCard
-                                name={e?.name}
-                                desc={e?.desc}
-                                userImg={e?.image}
+                        <div className="hidden sm:block">
+                            <div className={loader ? "opacity-0" : ""}>
+                                <MeetCard
+                                    name={e?.name}
+                                    desc={e?.desc}
+                                    userImg={e?.image}
+                                    chooseCard={() => {
+                                        chooseOne(e?._id)
+                                        getMeets()
+                                    }}
+                                />
+                            </div>
+                            <Skeleton
+                                sx={{
+                                    borderRadius: '2rem',
+                                    position: 'absolute',
+                                    top: 0,
+                                    left: 0,
+                                    width: '15rem',
+                                    minHeight: '22rem'
+                                }}
+                                variant="rectangular"
+                            />
+                        </div>
+                        <div className="sm:hidden">
+                            <MeetCardShort
+                                data={e}
                                 chooseCard={() => {
                                     chooseOne(e?._id)
                                     getMeets()
                                 }}
                             />
                         </div>
-                        <Skeleton
-                            sx={{
-                                borderRadius: '2rem',
-                                position: 'absolute',
-                                top: 0,
-                                left: 0,
-                                width: '15rem',
-                                minHeight: '22rem'
-                            }}
-                            variant="rectangular"  
-                        />
                     </div>
                 ))}
             </div>
