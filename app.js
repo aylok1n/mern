@@ -24,6 +24,7 @@ app.use(function (req, res, next) {
 app.use('/api/auth', require('./routes/auth.routes'))
 app.use('/api/search', require('./routes/search.routes'))
 app.use('/api/chat', require('./routes/chat.routes'))
+app.use('/test-api', require('./routes/test.routes'))
 
 if (PRODUCTION) {
     app.use('/', express.static(path.join(__dirname, 'client', 'build')))
