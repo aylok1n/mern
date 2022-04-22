@@ -123,4 +123,26 @@ router.get(
         }
     })
 
+router.get(
+    '/univer',
+    async (req, res) => {
+        try {
+
+            res.json({
+                data: [
+                    "УДГУ",
+                    "ИЖГТУ",
+                    "ИЖГСХА",
+                    "ИПЭК",
+                    "Монтажный техникум",
+                    "МВЕУ"
+                ]
+            })
+
+        } catch (e) {
+            console.log(e, 123)
+            res.status(500).json({ message: 'Что-то пошло не так, попробуйте снова' })
+        }
+    })
+
 module.exports = router
