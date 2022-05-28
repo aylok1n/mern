@@ -1,0 +1,5144 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          37.281532,
+          55.672189
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Одинцово",
+          "TransliterationStation": "Odintsovo",
+          "DiameterName": "МЦД-1",
+          "City": "Одинцовский городской округ",
+          "District": "",
+          "Area": "",
+          "Tariff": "Пригород",
+          "Platforms": 3,
+          "MaskStation": "да",
+          "TransferMCD": null,
+          "TransferAeroExpress": "Шереметьево",
+          "TransferMetroStation": [],
+          "AeroexpressStation": {
+            "global_id": 1509001630,
+            "value": "Одинцово"
+          },
+          "RailwayStation": [],
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 64,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 65,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 66,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 67,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 68,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 69,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 70,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1058815439
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.317476,
+          55.683022
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Баковка",
+          "TransliterationStation": "Bakovka",
+          "DiameterName": "МЦД-1",
+          "City": "Одинцовский городской округ",
+          "District": "",
+          "Area": "",
+          "Tariff": "Пригород",
+          "Platforms": 2,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "Шереметьево",
+          "TransferMetroStation": [],
+          "AeroexpressStation": {
+            "global_id": 1509001278,
+            "value": "Баковка"
+          },
+          "RailwayStation": [],
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 106,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 107,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 108,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 109,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 110,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 111,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 112,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1058819388
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.342054,
+          55.70023
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Сколково",
+          "TransliterationStation": "Skolkovo",
+          "DiameterName": "МЦД-1",
+          "City": "Одинцовский городской округ",
+          "District": "",
+          "Area": "",
+          "Tariff": "Пригород",
+          "Platforms": 3,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "Шереметьево",
+          "TransferMetroStation": [],
+          "AeroexpressStation": {
+            "global_id": 1509001201,
+            "value": "Сколково"
+          },
+          "RailwayStation": [],
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 120,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 121,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 122,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 123,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 124,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 125,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 126,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1058901090
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.375731,
+          55.716016
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Немчиновка",
+          "TransliterationStation": "Nemchinovka",
+          "DiameterName": "МЦД-1",
+          "City": "Одинцовский городской округ",
+          "District": "",
+          "Area": "",
+          "Tariff": "Пригород",
+          "Platforms": 2,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "Шереметьево",
+          "TransferMetroStation": [],
+          "AeroexpressStation": {
+            "global_id": 1508999617,
+            "value": "Немчиновка"
+          },
+          "RailwayStation": [],
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 127,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 128,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 129,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 130,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 131,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 132,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 133,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1058901245
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.397316,
+          55.723642
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Сетунь",
+          "TransliterationStation": "Setun",
+          "DiameterName": "МЦД-1",
+          "City": "город Москва",
+          "District": "Западный административный округ",
+          "Area": "Можайский район",
+          "Tariff": "Центральная",
+          "Platforms": 2,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "Шереметьево",
+          "TransferMetroStation": [],
+          "AeroexpressStation": {
+            "global_id": 1508997643,
+            "value": "Сетунь"
+          },
+          "RailwayStation": {
+            "global_id": 1132155504,
+            "value": "Сетунь"
+          },
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 141,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 142,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 143,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 144,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 145,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 146,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 147,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1058901441
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.417074,
+          55.727221
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Рабочий поселок",
+          "TransliterationStation": "Rabochiy Posyolok",
+          "DiameterName": "МЦД-1",
+          "City": "город Москва",
+          "District": "Западный административный округ",
+          "Area": "район Кунцево",
+          "Tariff": "Центральная",
+          "Platforms": 3,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "Шереметьево",
+          "TransferMetroStation": [],
+          "AeroexpressStation": {
+            "global_id": 1508986109,
+            "value": "Рабочий поселок"
+          },
+          "RailwayStation": {
+            "global_id": 1132155393,
+            "value": "Рабочий посёлок"
+          },
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 148,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 149,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 150,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 151,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 152,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 153,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 154,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1058901634
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.449219,
+          55.726852
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Кунцевская",
+          "TransliterationStation": "Kuntsevskaya",
+          "DiameterName": "МЦД-1",
+          "City": "город Москва",
+          "District": "Западный административный округ",
+          "Area": "район Фили-Давыдково",
+          "Tariff": "Центральная",
+          "Platforms": 2,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "Шереметьево",
+          "TransferMetroStation": [
+            {
+              "is_deleted": 0,
+              "global_id": 2,
+              "MetroStation": "Кунцевская",
+              "MetroLine": "Арбатско-Покровская линия"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 3,
+              "MetroStation": "Кунцевская",
+              "MetroLine": "Филёвская линия"
+            }
+          ],
+          "AeroexpressStation": {
+            "global_id": 1508986102,
+            "value": "Кунцевская"
+          },
+          "RailwayStation": {
+            "global_id": 1132155392,
+            "value": "Кунцевская"
+          },
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 155,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 156,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 157,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 158,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 159,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 160,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 161,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1058901824
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.472953,
+          55.730464
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Славянский бульвар",
+          "TransliterationStation": "Slavyanskiy Bulvar",
+          "DiameterName": "МЦД-1",
+          "City": "город Москва",
+          "District": "Западный административный округ",
+          "Area": "район Фили-Давыдково",
+          "Tariff": "Центральная",
+          "Platforms": 2,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "Шереметьево",
+          "TransferMetroStation": [
+            {
+              "is_deleted": 0,
+              "global_id": 4,
+              "MetroStation": "Славянский бульвар",
+              "MetroLine": "Арбатско-Покровская линия"
+            }
+          ],
+          "AeroexpressStation": {
+            "global_id": 1508985977,
+            "value": "Славянский бульвар"
+          },
+          "RailwayStation": {
+            "global_id": 1132155390,
+            "value": "Славянский бульвар"
+          },
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 162,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 163,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 164,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 165,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 166,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 167,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 168,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1058902031
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.515334,
+          55.744256
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Фили",
+          "TransliterationStation": "Fili",
+          "DiameterName": "МЦД-1",
+          "City": "город Москва",
+          "District": "Западный административный округ",
+          "Area": "район Дорогомилово",
+          "Tariff": "Центральная",
+          "Platforms": 3,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "Шереметьево",
+          "TransferMetroStation": [
+            {
+              "is_deleted": 0,
+              "global_id": 5,
+              "MetroStation": "Фили",
+              "MetroLine": "Филёвская линия"
+            }
+          ],
+          "AeroexpressStation": {
+            "global_id": 1508985884,
+            "value": "Фили"
+          },
+          "RailwayStation": {
+            "global_id": 1132155388,
+            "value": "Фили"
+          },
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 169,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 170,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 171,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 172,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 173,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 174,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 175,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1058903042
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.531224,
+          55.752897
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Тестовская",
+          "TransliterationStation": "Testovskaya",
+          "DiameterName": "МЦД-1",
+          "City": "город Москва",
+          "District": "Центральный административный округ",
+          "Area": "Пресненский район",
+          "Tariff": "Центральная",
+          "Platforms": 2,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "Шереметьево",
+          "TransferMetroStation": [
+            {
+              "is_deleted": 0,
+              "global_id": 6,
+              "MetroStation": "Деловой центр",
+              "MetroLine": "Большая кольцевая линия"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 7,
+              "MetroStation": "Деловой центр",
+              "MetroLine": "Московское центральное кольцо"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 8,
+              "MetroStation": "Шелепиха",
+              "MetroLine": "Большая кольцевая линия"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 9,
+              "MetroStation": "Шелепиха",
+              "MetroLine": "Московское центральное кольцо"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 10,
+              "MetroStation": "Международная",
+              "MetroLine": "Филёвская линия"
+            }
+          ],
+          "AeroexpressStation": {
+            "global_id": 1508985132,
+            "value": "Тестовская"
+          },
+          "RailwayStation": {
+            "global_id": 1132155494,
+            "value": "Тестовская"
+          },
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 176,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 177,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 178,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 179,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 180,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 181,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 182,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1058903381
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.550497,
+          55.77324
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Беговая",
+          "TransliterationStation": "Begovaya",
+          "DiameterName": "МЦД-1",
+          "City": "город Москва",
+          "District": "Северный административный округ",
+          "Area": "Пресненский район",
+          "Tariff": "Центральная",
+          "Platforms": 2,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "Шереметьево",
+          "TransferMetroStation": [
+            {
+              "is_deleted": 0,
+              "global_id": 12,
+              "MetroStation": "Беговая",
+              "MetroLine": "Таганско-Краснопресненская линия"
+            }
+          ],
+          "AeroexpressStation": {
+            "global_id": 1721303669,
+            "value": "Беговая"
+          },
+          "RailwayStation": {
+            "global_id": 1132155386,
+            "value": "Беговая"
+          },
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 190,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 191,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 192,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 193,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 194,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 195,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 196,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1058905211
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.581495,
+          55.776622
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Белорусская",
+          "TransliterationStation": "Belorusskaya",
+          "DiameterName": "МЦД-1",
+          "City": "город Москва",
+          "District": "Центральный административный округ",
+          "Area": "Тверской район",
+          "Tariff": "Центральная",
+          "Platforms": 8,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "Шереметьево",
+          "TransferMetroStation": [
+            {
+              "is_deleted": 0,
+              "global_id": 13,
+              "MetroStation": "Белорусская",
+              "MetroLine": "Кольцевая линия"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 14,
+              "MetroStation": "Белорусская",
+              "MetroLine": "Замоскворецкая линия"
+            }
+          ],
+          "AeroexpressStation": {
+            "global_id": 1508985008,
+            "value": "Белорусский вокзал"
+          },
+          "RailwayStation": {
+            "global_id": 1132155385,
+            "value": "Белорусская"
+          },
+          "ExitTrainStations": "Белорусский",
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 197,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 198,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 199,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 200,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 201,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 202,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 203,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1058906594
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.590204,
+          55.794363
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Савеловская",
+          "TransliterationStation": "Savyolovskaya",
+          "DiameterName": "МЦД-1",
+          "City": "город Москва",
+          "District": "Северо-Восточный административный округ",
+          "Area": "Бутырский район",
+          "Tariff": "Центральная",
+          "Platforms": 5,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "Шереметьево",
+          "TransferMetroStation": [
+            {
+              "is_deleted": 0,
+              "global_id": 15,
+              "MetroStation": "Савёловская",
+              "MetroLine": "Серпуховско-Тимирязевская линия"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 42,
+              "MetroStation": "Савёловская",
+              "MetroLine": "Большая кольцевая линия"
+            }
+          ],
+          "AeroexpressStation": {
+            "global_id": 1508984420,
+            "value": "Савеловский вокзал"
+          },
+          "RailwayStation": {
+            "global_id": 1132046977,
+            "value": "Савёловская"
+          },
+          "ExitTrainStations": "Савеловский",
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 204,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 205,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 206,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 207,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 208,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 209,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 210,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1058906777
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.575512,
+          55.819363
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Тимирязевская",
+          "TransliterationStation": "Timiryazevskaya",
+          "DiameterName": "МЦД-1",
+          "City": "город Москва",
+          "District": "Северный административный округ",
+          "Area": "Бутырский район",
+          "Tariff": "Центральная",
+          "Platforms": 2,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [
+            {
+              "is_deleted": 0,
+              "global_id": 16,
+              "MetroStation": "Тимирязевская",
+              "MetroLine": "Серпуховско-Тимирязевская линия"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 43,
+              "MetroStation": "Тимирязевская",
+              "MetroLine": "Московская монорельсовая транспортная система"
+            }
+          ],
+          "AeroexpressStation": [],
+          "RailwayStation": {
+            "global_id": 1132046986,
+            "value": "Тимирязевская"
+          },
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 211,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 212,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 213,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 214,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 215,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 216,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 217,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1058907003
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.574445,
+          55.847908
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Окружная",
+          "TransliterationStation": "Okruzhnaya",
+          "DiameterName": "МЦД-1",
+          "City": "город Москва",
+          "District": "Северный административный округ",
+          "Area": "район Марфино",
+          "Tariff": "Центральная",
+          "Platforms": 1,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "Шереметьево",
+          "TransferMetroStation": [
+            {
+              "is_deleted": 0,
+              "global_id": 17,
+              "MetroStation": "Окружная",
+              "MetroLine": "Московское центральное кольцо"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 18,
+              "MetroStation": "Окружная",
+              "MetroLine": "Люблинско-Дмитровская линия"
+            }
+          ],
+          "AeroexpressStation": {
+            "global_id": 1508983290,
+            "value": "Окружная"
+          },
+          "RailwayStation": {
+            "global_id": 1132046990,
+            "value": "Окружная"
+          },
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 218,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 219,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 220,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 221,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 222,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 223,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 224,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1058907212
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.57321,
+          55.865309
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Дегунино",
+          "TransliterationStation": "Degunino",
+          "DiameterName": "МЦД-1",
+          "City": "город Москва",
+          "District": "Северный административный округ",
+          "Area": "район Дегунино",
+          "Tariff": "Центральная",
+          "Platforms": 2,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [],
+          "AeroexpressStation": [],
+          "RailwayStation": {
+            "global_id": 1132047120,
+            "value": "Дегунино"
+          },
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 225,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 226,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 227,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 228,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 229,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 230,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 231,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1058907397
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.567546,
+          55.882701
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Бескудниково",
+          "TransliterationStation": "Beskudnikovo",
+          "DiameterName": "МЦД-1",
+          "City": "город Москва",
+          "District": "Северный административный округ",
+          "Area": "район Дегунино",
+          "Tariff": "Центральная",
+          "Platforms": 2,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [],
+          "AeroexpressStation": [],
+          "RailwayStation": {
+            "global_id": 1132155379,
+            "value": "Бескудниково"
+          },
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 232,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 233,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 234,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 235,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 236,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 237,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 238,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1058907512
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.553832,
+          55.897215
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Лианозово",
+          "TransliterationStation": "Lianozovo",
+          "DiameterName": "МЦД-1",
+          "City": "город Москва",
+          "District": "Северный административный округ",
+          "Area": "район Лианозово",
+          "Tariff": "Центральная",
+          "Platforms": 2,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [],
+          "AeroexpressStation": [],
+          "RailwayStation": {
+            "global_id": 1132155380,
+            "value": "Лианозово"
+          },
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 239,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 240,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 241,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 242,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 243,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 244,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 245,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1058907703
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.538593,
+          55.904234
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Марк",
+          "TransliterationStation": "Mark",
+          "DiameterName": "МЦД-1",
+          "City": "город Москва",
+          "District": "Северный административный округ",
+          "Area": "Дмитровский район",
+          "Tariff": "Центральная",
+          "Platforms": 2,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [],
+          "AeroexpressStation": [],
+          "RailwayStation": {
+            "global_id": 1132155381,
+            "value": "Марк"
+          },
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 246,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 247,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 248,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 249,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 250,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 251,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 252,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1058907818
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.527639,
+          55.9247
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Новодачная",
+          "TransliterationStation": "Novodachnaya",
+          "DiameterName": "МЦД-1",
+          "City": "городской округ Долгопрудный",
+          "District": "",
+          "Area": "",
+          "Tariff": "Пригород",
+          "Platforms": 2,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [],
+          "AeroexpressStation": [],
+          "RailwayStation": {
+            "global_id": 1132155383,
+            "value": "Новодачная"
+          },
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 253,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 254,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 255,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 256,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 257,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 258,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 259,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1058907985
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.520658,
+          55.938454
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Долгопрудная",
+          "TransliterationStation": "Dolgoprudnaya",
+          "DiameterName": "МЦД-1",
+          "City": "городской округ Долгопрудный",
+          "District": "",
+          "Area": "",
+          "Tariff": "Пригород",
+          "Platforms": 2,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [],
+          "AeroexpressStation": [],
+          "RailwayStation": {
+            "global_id": 1132155384,
+            "value": "Долгопрудная"
+          },
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 260,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 261,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 262,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 263,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 264,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 265,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 266,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1058908056
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.512507,
+          55.952486
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Водники",
+          "TransliterationStation": "Vodniki",
+          "DiameterName": "МЦД-1",
+          "City": "городской округ Долгопрудный",
+          "District": "",
+          "Area": "",
+          "Tariff": "Пригород",
+          "Platforms": 2,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [],
+          "AeroexpressStation": [],
+          "RailwayStation": [],
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 267,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 268,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 269,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 270,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 271,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 272,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 273,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1058908183
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.504519,
+          55.97062
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Хлебниково",
+          "TransliterationStation": "Khlebnikovo",
+          "DiameterName": "МЦД-1",
+          "City": "городской округ Долгопрудный",
+          "District": "",
+          "Area": "",
+          "Tariff": "Пригород",
+          "Platforms": 2,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [],
+          "AeroexpressStation": [],
+          "RailwayStation": [],
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 274,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 275,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 276,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 277,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 278,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 279,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 280,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1058908343
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.498799,
+          55.983856
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Шереметьевская",
+          "TransliterationStation": "Sheremetyevskaya",
+          "DiameterName": "МЦД-1",
+          "City": "городской округ Долгопрудный",
+          "District": "",
+          "Area": "",
+          "Tariff": "Пригород",
+          "Platforms": 2,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [],
+          "AeroexpressStation": [],
+          "RailwayStation": [],
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 281,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 282,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 283,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 284,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 285,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 286,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 287,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1058908468
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.484545,
+          56.013189
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Лобня",
+          "TransliterationStation": "Lobnya",
+          "DiameterName": "МЦД-1",
+          "City": "городской округ Лобня",
+          "District": "",
+          "Area": "",
+          "Tariff": "Пригород",
+          "Platforms": 2,
+          "MaskStation": "да",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [],
+          "AeroexpressStation": [],
+          "RailwayStation": [],
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 288,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 289,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 290,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 291,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 292,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 293,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 294,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1058908633
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.185223,
+          55.841671
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Нахабино",
+          "TransliterationStation": "Nakhabino",
+          "DiameterName": "МЦД-2",
+          "City": "городской округ Красногорск",
+          "District": "",
+          "Area": "",
+          "Tariff": "Пригород",
+          "Platforms": 2,
+          "MaskStation": "да",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [],
+          "AeroexpressStation": [],
+          "RailwayStation": [],
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 302,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 303,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 304,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 305,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 306,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 307,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 308,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1058974354
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.219917,
+          55.832086
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Аникеевка",
+          "TransliterationStation": "Anikeevka",
+          "DiameterName": "МЦД-2",
+          "City": "городской округ Красногорск",
+          "District": "",
+          "Area": "",
+          "Tariff": "Пригород",
+          "Platforms": 2,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [],
+          "AeroexpressStation": [],
+          "RailwayStation": [],
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 309,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 310,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 311,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 312,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 313,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 314,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 315,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1058974590
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.242622,
+          55.824731
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Опалиха",
+          "TransliterationStation": "Opalikha",
+          "DiameterName": "МЦД-2",
+          "City": "городской округ Красногорск",
+          "District": "",
+          "Area": "",
+          "Tariff": "Пригород",
+          "Platforms": 1,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [],
+          "AeroexpressStation": [],
+          "RailwayStation": [],
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 323,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 324,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 325,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 326,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 327,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 328,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 329,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1058976210
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.303172,
+          55.814752
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Красногорская",
+          "TransliterationStation": "Krasnogorskaya",
+          "DiameterName": "МЦД-2",
+          "City": "городской округ Красногорск",
+          "District": "",
+          "Area": "",
+          "Tariff": "Пригород",
+          "Platforms": 2,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [],
+          "AeroexpressStation": [],
+          "RailwayStation": [],
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 330,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 331,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 332,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 333,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 334,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 335,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 336,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1058976411
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.341809,
+          55.815631
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Павшино",
+          "TransliterationStation": "Pavshino",
+          "DiameterName": "МЦД-2",
+          "City": "городской округ Красногорск",
+          "District": "",
+          "Area": "",
+          "Tariff": "Пригород",
+          "Platforms": 1,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [],
+          "AeroexpressStation": [],
+          "RailwayStation": [],
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 344,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 345,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 346,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 347,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 348,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 349,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 350,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1058976748
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.361165,
+          55.823149
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Пенягино",
+          "TransliterationStation": "Penyagino",
+          "DiameterName": "МЦД-2",
+          "City": "городской округ Красногорск",
+          "District": "",
+          "Area": "",
+          "Tariff": "Пригород",
+          "Platforms": 1,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [],
+          "AeroexpressStation": [],
+          "RailwayStation": {
+            "global_id": 1132155405,
+            "value": "Пенягино"
+          },
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 358,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 359,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 360,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 361,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 362,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 363,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 364,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1058982557
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.381824,
+          55.832165
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Волоколамская",
+          "TransliterationStation": "Volokolamskaya",
+          "DiameterName": "МЦД-2",
+          "City": "город Москва",
+          "District": "Северо-Западный административный округ",
+          "Area": "район Митино",
+          "Tariff": "Центральная",
+          "Platforms": 1,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [
+            {
+              "is_deleted": 0,
+              "global_id": 19,
+              "MetroStation": "Волоколамская",
+              "MetroLine": "Арбатско-Покровская линия"
+            }
+          ],
+          "AeroexpressStation": [],
+          "RailwayStation": {
+            "global_id": 1132155513,
+            "value": "Волоколамская"
+          },
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 365,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 366,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 367,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 368,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 369,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 370,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 371,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1058982846
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.399195,
+          55.833127
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Трикотажная",
+          "TransliterationStation": "Trikotazhnaya",
+          "DiameterName": "МЦД-2",
+          "City": "город Москва",
+          "District": "Северо-Западный административный округ",
+          "Area": "район Южное Тушино",
+          "Tariff": "Центральная",
+          "Platforms": 2,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [],
+          "AeroexpressStation": [],
+          "RailwayStation": {
+            "global_id": 1132155403,
+            "value": "Трикотажная"
+          },
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 372,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 373,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 374,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 375,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 376,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 377,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 378,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1058983081
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.439691,
+          55.827297
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Тушинская",
+          "TransliterationStation": "Tushinskaya",
+          "DiameterName": "МЦД-2",
+          "City": "город Москва",
+          "District": "Северо-Западный административный округ",
+          "Area": "район Покровское-Стрешнево",
+          "Tariff": "Центральная",
+          "Platforms": 2,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [
+            {
+              "is_deleted": 0,
+              "global_id": 40,
+              "MetroStation": "Тушинская",
+              "MetroLine": "Таганско-Краснопресненская линия"
+            }
+          ],
+          "AeroexpressStation": [],
+          "RailwayStation": {
+            "global_id": 1132155511,
+            "value": "Тушинская"
+          },
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 379,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 380,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 381,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 382,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 383,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 384,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 385,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1058984243
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.476699,
+          55.814204
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Щукинская",
+          "TransliterationStation": "Schukinskaya",
+          "DiameterName": "МЦД-2",
+          "City": "город Москва",
+          "District": "Северо-Западный административный округ",
+          "Area": "Покровское-СтрешневоЩукино",
+          "Tariff": "Центральная",
+          "Platforms": 1,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [
+            {
+              "is_deleted": 0,
+              "global_id": 41,
+              "MetroStation": "Щукинская",
+              "MetroLine": "Таганско-Краснопресненская линия"
+            }
+          ],
+          "AeroexpressStation": [],
+          "RailwayStation": {
+            "global_id": 1132155510,
+            "value": "Щукинская"
+          },
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 386,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 387,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 388,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 389,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 390,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 391,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 392,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1058984955
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.493585,
+          55.815317
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Стрешнево",
+          "TransliterationStation": "Streshnevo",
+          "DiameterName": "МЦД-2",
+          "City": "город Москва",
+          "District": "Северный административный округ",
+          "Area": "Войковский район",
+          "Tariff": "Центральная",
+          "Platforms": 2,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [
+            {
+              "is_deleted": 0,
+              "global_id": 23,
+              "MetroStation": "Войковская",
+              "MetroLine": "Замоскворецкая линия"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 24,
+              "MetroStation": "Стрешнево",
+              "MetroLine": "Московское центральное кольцо"
+            }
+          ],
+          "AeroexpressStation": [],
+          "RailwayStation": {
+            "global_id": 1132155400,
+            "value": "Стрешнево"
+          },
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 400,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 401,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 402,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 403,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 404,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 405,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 406,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1058985425
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.525755,
+          55.815544
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Красный Балтиец",
+          "TransliterationStation": "Krasniy Baltiets",
+          "DiameterName": "МЦД-2",
+          "City": "город Москва",
+          "District": "Северный административный округ",
+          "Area": "район Аэропорт",
+          "Tariff": "Центральная",
+          "Platforms": 2,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [],
+          "AeroexpressStation": [],
+          "RailwayStation": {
+            "global_id": 1132155508,
+            "value": "Красный Балтиец"
+          },
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 421,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 422,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 423,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 424,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 425,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 426,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 427,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1058994867
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.55388,
+          55.805418
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Гражданская",
+          "TransliterationStation": "Grazhdanskaya",
+          "DiameterName": "МЦД-2",
+          "City": "город Москва",
+          "District": "Северный административный округ",
+          "Area": "Тимирязевский район",
+          "Tariff": "Центральная",
+          "Platforms": 2,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [],
+          "AeroexpressStation": [],
+          "RailwayStation": {
+            "global_id": 1132155397,
+            "value": "Гражданская"
+          },
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 414,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 415,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 416,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 417,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 418,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 419,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 420,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1058986231
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.579781,
+          55.808045
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Дмитровская",
+          "TransliterationStation": "Dmitrovskaya",
+          "DiameterName": "МЦД-2",
+          "City": "город Москва",
+          "District": "Северо-Восточный административный округ",
+          "Area": "Бутырский район",
+          "Tariff": "Центральная",
+          "Platforms": 2,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [
+            {
+              "is_deleted": 0,
+              "global_id": 26,
+              "MetroStation": "Дмитровская",
+              "MetroLine": "Серпуховско-Тимирязевская линия"
+            }
+          ],
+          "AeroexpressStation": [],
+          "RailwayStation": {
+            "global_id": 1132155396,
+            "value": "Дмитровская"
+          },
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 435,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 436,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 437,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 438,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 439,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 440,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 441,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1058996666
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.638769,
+          55.793967
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Рижская",
+          "TransliterationStation": "Rizhskaya",
+          "DiameterName": "МЦД-2",
+          "City": "город Москва",
+          "District": "Центральный административный округ",
+          "Area": "Мещанский район",
+          "Tariff": "Центральная",
+          "Platforms": 2,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [
+            {
+              "is_deleted": 0,
+              "global_id": 27,
+              "MetroStation": "Рижская",
+              "MetroLine": "Калужско-Рижская линия"
+            }
+          ],
+          "AeroexpressStation": [],
+          "RailwayStation": {
+            "global_id": 1132155428,
+            "value": "Рижская"
+          },
+          "ExitTrainStations": "Рижский",
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 442,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 443,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 444,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 445,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 446,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 447,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 448,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1058999474
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.652112,
+          55.775773
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Каланчевская",
+          "TransliterationStation": "Kalanchyovskaya",
+          "DiameterName": "МЦД-2",
+          "City": "город Москва",
+          "District": "Центральный административный округ",
+          "Area": "Красносельский район",
+          "Tariff": "Центральная",
+          "Platforms": 2,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [
+            {
+              "is_deleted": 0,
+              "global_id": 28,
+              "MetroStation": "Комсомольская",
+              "MetroLine": "Сокольническая линия"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 29,
+              "MetroStation": "Комсомольская",
+              "MetroLine": "Кольцевая линия"
+            }
+          ],
+          "AeroexpressStation": [],
+          "RailwayStation": {
+            "global_id": 1132155516,
+            "value": "Каланчёвская"
+          },
+          "ExitTrainStations": "Ленинградский",
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 449,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 450,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 451,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 452,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 453,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 454,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 455,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1059233585
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.661519,
+          55.757614
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Курская",
+          "TransliterationStation": "Kurskaya",
+          "DiameterName": "МЦД-2",
+          "City": "город Москва",
+          "District": "Центральный административный округ",
+          "Area": "Басманный район",
+          "Tariff": "Центральная",
+          "Platforms": 9,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [
+            {
+              "is_deleted": 0,
+              "global_id": 30,
+              "MetroStation": "Курская",
+              "MetroLine": "Кольцевая линия"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 31,
+              "MetroStation": "Курская",
+              "MetroLine": "Арбатско-Покровская линия"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 32,
+              "MetroStation": "Чкаловская",
+              "MetroLine": "Люблинско-Дмитровская линия"
+            }
+          ],
+          "AeroexpressStation": [],
+          "RailwayStation": {
+            "global_id": 1132155409,
+            "value": "Курская"
+          },
+          "ExitTrainStations": "Курский",
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 456,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 457,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 458,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 459,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 460,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 461,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 462,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1059233904
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.688837,
+          55.745356
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Москва-Товарная",
+          "TransliterationStation": "Moskva-Tovarnaya",
+          "DiameterName": "МЦД-2",
+          "City": "город Москва",
+          "District": "Юго-Восточный административный округ",
+          "Area": "Таганский район",
+          "Tariff": "Центральная",
+          "Platforms": 1,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [
+            {
+              "is_deleted": 0,
+              "global_id": 33,
+              "MetroStation": "Площадь Ильича",
+              "MetroLine": "Калининская линия"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 34,
+              "MetroStation": "Римская",
+              "MetroLine": "Люблинско-Дмитровская линия"
+            }
+          ],
+          "AeroexpressStation": [],
+          "RailwayStation": {
+            "global_id": 1132155410,
+            "value": "Москва-Товарная"
+          },
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 463,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 464,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 465,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 466,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 467,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 468,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 469,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1059234781
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.702463,
+          55.733844
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Калитники",
+          "TransliterationStation": "Kalitniki",
+          "DiameterName": "МЦД-2",
+          "City": "город Москва",
+          "District": "Юго-Восточный административный округ",
+          "Area": "Нижегородский район",
+          "Tariff": "Центральная",
+          "Platforms": 2,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [],
+          "AeroexpressStation": [],
+          "RailwayStation": {
+            "global_id": 1132155520,
+            "value": "Калитники"
+          },
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 470,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 471,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 472,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 473,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 474,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 475,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 476,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1059234962
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.713798,
+          55.724282
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Новохохловская",
+          "TransliterationStation": "Novokhokhlovskaya",
+          "DiameterName": "МЦД-2",
+          "City": "город Москва",
+          "District": "Юго-Восточный административный округ",
+          "Area": "Нижегородский район",
+          "Tariff": "Центральная",
+          "Platforms": 1,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [
+            {
+              "is_deleted": 0,
+              "global_id": 35,
+              "MetroStation": "Новохохловская",
+              "MetroLine": "Московское центральное кольцо"
+            }
+          ],
+          "AeroexpressStation": [],
+          "RailwayStation": [],
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 477,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 478,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 479,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 480,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 481,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 482,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 483,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1059235164
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.729899,
+          55.707111
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Текстильщики",
+          "TransliterationStation": "Tekstilschiki",
+          "DiameterName": "МЦД-2",
+          "City": "город Москва",
+          "District": "Юго-Восточный административный округ",
+          "Area": "район Текстильщики",
+          "Tariff": "Центральная",
+          "Platforms": 2,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [
+            {
+              "is_deleted": 0,
+              "global_id": 36,
+              "MetroStation": "Текстильщики",
+              "MetroLine": "Таганско-Краснопресненская линия"
+            }
+          ],
+          "AeroexpressStation": [],
+          "RailwayStation": [],
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 484,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 485,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 486,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 487,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 488,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 489,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 490,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1059235328
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.734005,
+          55.684985
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Люблино",
+          "TransliterationStation": "Lyublino",
+          "DiameterName": "МЦД-2",
+          "City": "город Москва",
+          "District": "Юго-Восточный административный округ",
+          "Area": "район Печатники",
+          "Tariff": "Центральная",
+          "Platforms": 2,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [],
+          "AeroexpressStation": [],
+          "RailwayStation": {
+            "global_id": 1132155414,
+            "value": "Люблино"
+          },
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 491,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 492,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 493,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 494,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 495,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 496,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 497,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1059235510
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.728179,
+          55.674275
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Депо",
+          "TransliterationStation": "Depo",
+          "DiameterName": "МЦД-2",
+          "City": "город Москва",
+          "District": "Юго-Восточный административный округ",
+          "Area": "район Печатники",
+          "Tariff": "Центральная",
+          "Platforms": 1,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [],
+          "AeroexpressStation": [],
+          "RailwayStation": {
+            "global_id": 1132155415,
+            "value": "Депо"
+          },
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 498,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 499,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 500,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 501,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 502,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 503,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 504,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1059235707
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.716995,
+          55.661225
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Перерва",
+          "TransliterationStation": "Pererva",
+          "DiameterName": "МЦД-2",
+          "City": "город Москва",
+          "District": "Юго-Восточный административный округ",
+          "Area": "район Печатники",
+          "Tariff": "Центральная",
+          "Platforms": 2,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [],
+          "AeroexpressStation": [],
+          "RailwayStation": {
+            "global_id": 1132155525,
+            "value": "Перерва"
+          },
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 505,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 506,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 507,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 508,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 509,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 510,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 511,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1059236171
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.701552,
+          55.649861
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Курьяново",
+          "TransliterationStation": "Kuryanovo",
+          "DiameterName": "МЦД-2",
+          "City": "город Москва",
+          "District": "Юго-Восточный административный округ",
+          "Area": "район Печатники",
+          "Tariff": "Центральная",
+          "Platforms": 1,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [],
+          "AeroexpressStation": [],
+          "RailwayStation": {
+            "global_id": 1132155418,
+            "value": "Курьяново"
+          },
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 512,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 513,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 514,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 515,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 516,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 517,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 518,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1059236415
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.689931,
+          55.641196
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Москворечье",
+          "TransliterationStation": "Moskvorechye",
+          "DiameterName": "МЦД-2",
+          "City": "город Москва",
+          "District": "Южный административный округ",
+          "Area": "район Москворечье-Сабурово",
+          "Tariff": "Центральная",
+          "Platforms": 2,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [],
+          "AeroexpressStation": [],
+          "RailwayStation": {
+            "global_id": 1132155419,
+            "value": "Москворечье"
+          },
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 519,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 520,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 521,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 522,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 523,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 524,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 525,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1059237711
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.667718,
+          55.61789
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Царицыно",
+          "TransliterationStation": "Tsaritsyno",
+          "DiameterName": "МЦД-2",
+          "City": "город Москва",
+          "District": "Южный административный округ",
+          "Area": "район Бирюлево Восточное",
+          "Tariff": "Центральная",
+          "Platforms": 4,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [
+            {
+              "is_deleted": 0,
+              "global_id": 37,
+              "MetroStation": "Царицыно",
+              "MetroLine": "Замоскворецкая линия"
+            }
+          ],
+          "AeroexpressStation": [],
+          "RailwayStation": {
+            "global_id": 1132155420,
+            "value": "Царицыно"
+          },
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 526,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 527,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 528,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 529,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 530,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 531,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 532,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1059237948
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.632235,
+          55.603317
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Покровское",
+          "TransliterationStation": "Pokrovskoe",
+          "DiameterName": "МЦД-2",
+          "City": "город Москва",
+          "District": "Южный административный округ",
+          "Area": "район Чертаново Южное",
+          "Tariff": "Центральная",
+          "Platforms": 2,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [],
+          "AeroexpressStation": [],
+          "RailwayStation": {
+            "global_id": 1132155421,
+            "value": "Покровское"
+          },
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 533,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 534,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 535,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 536,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 537,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 538,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 539,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1059238143
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.614536,
+          55.589168
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Красный Строитель",
+          "TransliterationStation": "Krasniy Stroitel",
+          "DiameterName": "МЦД-2",
+          "City": "город Москва",
+          "District": "Южный административный округ",
+          "Area": "район Бирюлево Западное",
+          "Tariff": "Центральная",
+          "Platforms": 2,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [],
+          "AeroexpressStation": [],
+          "RailwayStation": {
+            "global_id": 1132155530,
+            "value": "Красный Строитель"
+          },
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 540,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 541,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 542,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 543,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 544,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 545,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 546,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1059238308
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.61156,
+          55.571247
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Битца",
+          "TransliterationStation": "Bitsa",
+          "DiameterName": "МЦД-2",
+          "City": "Ленинский городской округ",
+          "District": "",
+          "Area": "",
+          "Tariff": "Центральная",
+          "Platforms": 2,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [],
+          "AeroexpressStation": [],
+          "RailwayStation": [],
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 547,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 548,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 549,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 550,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 551,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 552,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 553,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1059238551
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.570544,
+          55.541226
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Бутово",
+          "TransliterationStation": "Butovo",
+          "DiameterName": "МЦД-2",
+          "City": "город Москва",
+          "District": "Юго-Западный административный округ",
+          "Area": "район Южное Бутово",
+          "Tariff": "Центральная",
+          "Platforms": 2,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [],
+          "AeroexpressStation": [],
+          "RailwayStation": {
+            "global_id": 1132155531,
+            "value": "Бутово"
+          },
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 554,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 555,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 556,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 557,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 558,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 559,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 560,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1059238979
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.562267,
+          55.510377
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Щербинка",
+          "TransliterationStation": "Scherbinka",
+          "DiameterName": "МЦД-2",
+          "City": "город Москва",
+          "District": "Новомосковский административный округ",
+          "Area": "городской округ Щербинка",
+          "Tariff": "Центральная",
+          "Platforms": 2,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [],
+          "AeroexpressStation": [],
+          "RailwayStation": {
+            "global_id": 1132155532,
+            "value": "Щербинка"
+          },
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 561,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 562,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 563,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 564,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 565,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 566,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 567,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1059239079
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.555195,
+          55.486256
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Остафьево",
+          "TransliterationStation": "Ostafyevo",
+          "DiameterName": "МЦД-2",
+          "City": "город Москва",
+          "District": "Новомосковский административный округ",
+          "Area": "поселение Рязановское",
+          "Tariff": "Центральная",
+          "Platforms": 2,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [],
+          "AeroexpressStation": [],
+          "RailwayStation": {
+            "global_id": 1132155425,
+            "value": "Остафьево"
+          },
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 568,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 569,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 570,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 571,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 572,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 573,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 574,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1059239080
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.555112,
+          55.470495
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Силикатная",
+          "TransliterationStation": "Silikatnaya",
+          "DiameterName": "МЦД-2",
+          "City": "городской округ Подольск",
+          "District": "",
+          "Area": "",
+          "Tariff": "Пригород",
+          "Platforms": 2,
+          "MaskStation": "нет",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [],
+          "AeroexpressStation": [],
+          "RailwayStation": [],
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 575,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 576,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 577,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 578,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 579,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 580,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 581,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1059239118
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          37.565152,
+          55.432241
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 62888,
+        "VersionNumber": 1,
+        "ReleaseNumber": 4,
+        "RowId": null,
+        "Attributes": {
+          "StationName": "Подольск",
+          "TransliterationStation": "Podolsk",
+          "DiameterName": "МЦД-2",
+          "City": "городской округ Подольск",
+          "District": "",
+          "Area": "",
+          "Tariff": "Пригород",
+          "Platforms": 3,
+          "MaskStation": "да",
+          "TransferMCD": null,
+          "TransferAeroExpress": "",
+          "TransferMetroStation": [],
+          "AeroexpressStation": [],
+          "RailwayStation": [],
+          "ExitTrainStations": null,
+          "WorkingHours": [
+            {
+              "is_deleted": 0,
+              "global_id": 582,
+              "DayOfWeek": "понедельник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 583,
+              "DayOfWeek": "вторник",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 584,
+              "DayOfWeek": "среда",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 585,
+              "DayOfWeek": "четверг",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 586,
+              "DayOfWeek": "пятница",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 587,
+              "DayOfWeek": "суббота",
+              "Hours": "05:30-01:00"
+            },
+            {
+              "is_deleted": 0,
+              "global_id": 588,
+              "DayOfWeek": "воскресенье",
+              "Hours": "05:30-01:00"
+            }
+          ],
+          "ObjectStatus": "действует",
+          "global_id": 1059239214
+        }
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

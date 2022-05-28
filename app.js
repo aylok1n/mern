@@ -25,6 +25,7 @@ app.use('/api/auth', require('./routes/auth.routes'))
 app.use('/api/search', require('./routes/search.routes'))
 app.use('/api/chat', require('./routes/chat.routes'))
 app.use('/test-api', require('./routes/test.routes'))
+app.use('/geo-api', require('./maps/getData'))
 
 if (PRODUCTION) {
     app.use('/', express.static(path.join(__dirname, 'client', 'build')))
